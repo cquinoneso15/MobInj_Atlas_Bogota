@@ -1,1 +1,1 @@
-# MobInj_Atlas_Bogota
+# Mobility (In)Justice Atlas of Bogota, Colombia
