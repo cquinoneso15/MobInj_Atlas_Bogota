@@ -157,7 +157,7 @@ body {
 }
 
 .navbar-container>input[type="checkbox"]:checked~.hamburger-lines .line1 {
-    transform: rotate(45deg);
+    transform: rotate(35deg);
     background: var(--tum-blue-dark);
 }
 
@@ -167,7 +167,7 @@ body {
 }
 
 .navbar-container>input[type="checkbox"]:checked~.hamburger-lines .line3 {
-    transform: rotate(-45deg);
+    transform: rotate(-35deg);
     background: var(--tum-blue-dark);
 }
 
@@ -238,18 +238,6 @@ input[type="checkbox"]:checked~.arrow {
     right: 5px;
 }
 
-#sp-1 input[type="checkbox"] {
-    display: none;
-}
-#sp-2 input[type="checkbox"] {
-    display: none;
-}
-#sp-3 input[type="checkbox"] {
-    display: none;
-}
-#sp-4 input[type="checkbox"] {
-    display: none;
-}
 .menu-items>.select-main>input[type="checkbox"]~.select-options {
     /* Don't display options when unchecked */
     display: none;
@@ -259,7 +247,6 @@ input[type="checkbox"]:checked~.arrow {
     /* Display options when checked */
     display: block;
 }
-
 
 .menu-items>.select-main>input[type="checkbox"]:checked~.select-options>.select-option {
     /* Display options when checked */
@@ -440,6 +427,12 @@ div.select-title-info:hover>span.info-tooltip {
 
 .legend-title-text {
     padding-right: 15px;
+}
+.legend-comment {
+    padding-right: 10px;
+    font-style: italic;
+    max-width: 300px; /* Adjust the max-width as needed */
+    overflow-wrap: break-word; /* To ensure the text breaks nicely */
 }
 
 .legend-content {
@@ -649,7 +642,37 @@ footer {
 .social-button:hover {
     color: var(--mcube-orange);
 }
-  
+
+.custom-bullets {
+    /* Add styles here if needed, e.g., for the containing div */
+    display: flex;
+    flex-direction: column;
+}
+
+
+.bullet {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bullet::before {
+    content: '•'; /* Custom bullet symbol */
+    color: black; /* Color of the bullet */
+    display: inline-block;
+    margin-right: 8px; /* Space between the bullet and text */
+    left: 0; /* Aligns bullet to the left */
+    top: 0; /* Aligns bullet to the top, adjust as needed */
+    position: absolute;
+    /* Additional styling as needed */
+}
+.bullet span{
+    text-align: left; /* Aligns the text inside span and a to the left */
+}
+.bullet a{
+    text-align: right; /* Aligns the text inside span and a to the left */
+    margin-left: auto;
+}
 
 .close {
     color: #aaa;
