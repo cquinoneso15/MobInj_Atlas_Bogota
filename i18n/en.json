@@ -89,7 +89,6 @@
     "radar_ugs": "Access to Urban Green Spaces",
 
 
-    /*
     "select_mot": "Select one mode of transport",
     "w_700": "Walking, 700m",
     "b_700": "Biking, 10min",
@@ -98,7 +97,6 @@
     "owns_bike": "Bicycle ownership",
     "owns_ebike": "E-bicycle ownership",
     "owns_car_sharing_membership": "Car-sharing membership",
-    */
 
     "select_exp": "UTAM risks",
     "fatalities": "Accidents with fatalities",
@@ -128,7 +126,7 @@
     "select_beh": "Transport Mode Use",
     "car_use": "Car Use",
     "bicycle_use": "Bicycle Use",
-    "moto_use": "Motorcycle Use"
+    "moto_use": "Motorcycle Use",
     "pt_use": "Public Transport Use",
     "walk_use": "Walking",
     "radar_walk_use": "Pedestrian Share",
