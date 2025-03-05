@@ -64,8 +64,24 @@ var selector_values_before_sp_0 = [
         "desc": "desc_ji"
     },
     {
+        "value": "env",
+        "desc": "env_desc"
+    },
+    {
         "value": "ji_v_sg",
         "desc": "desc_ji_v_sg"
+    },
+    {
+        "value": "spat",
+        "desc": "spat_desc"
+    },
+    {
+        "value": "access",
+        "desc": "access_desc"
+    },
+    {
+        "value": "mobinj",
+        "desc": "mobinj_desc"
     },
     {
         "value": "summ",
@@ -88,34 +104,30 @@ var selector_values_after_sp_0 = {
                 "desc": "desc"
             },
             {
+                "value": "w",
+                "desc": "desc"
+            },
+            {
                 "value": "o60",
                 "desc": "desc"
             },
             {
-                "value": "u9",
+                "value": "u10",
                 "desc": "desc"
             },
 
             {
-                "value": "u19",
+                "value": "u20",
                 "desc": "desc"
             },
             {
-                "value": "un",
+                "value": "vic",
                 "desc": "desc"
             },
             {
-                "value": "imm",
+                "value": "ses",
                 "desc": "desc"
             },
-            {
-                "value": "income",
-                "desc": "desc"
-            },
-            {
-                "value": "nc",
-                "desc": "desc"
-            }
         ]
     },
     "ji": {
