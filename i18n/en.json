@@ -36,6 +36,8 @@
     "desc_ji_v_sg": "Where do social and transport disadvantages meet?",
     "spat": "Spatial Disadvantages",
     "spat_desc": "Where do social and environmental disadvantages meet?",
+    "access": "Accessibility Disadvantages",
+    "access_desc": "Where do transport and environmental disadvantages meet?",
     "summ": "UTAMs summary",
     "desc_summ": "How just is mobility in my UTAM?",
 
