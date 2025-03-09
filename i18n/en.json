@@ -80,6 +80,7 @@
     "ses_unit": "% residential area",
 
     "select_amenity": "Amenity",
+    "amenities": "Amenities",
     "h": "Health and Pharmacies",
     "radar_h": "Access to Health Institutions",
     "radar_p": "Access to Pharmacies",

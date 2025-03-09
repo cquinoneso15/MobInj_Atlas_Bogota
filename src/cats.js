@@ -157,7 +157,7 @@ var selector_values_after_sp_0 = {
         "title": "select_justice",
         "values": [
             {
-                "value": "select_amenity",
+                "value": "amenities",
                 "desc": "desc"
             },
             {
@@ -332,7 +332,7 @@ var selector_values_after_sp_1 = {
     },
     //subcategories for environmental disadvantages
     "env":{
-        "acc": {
+        "amenities": {
             "amenity": {
                 "title": "select_amenity",
                 "values": [
