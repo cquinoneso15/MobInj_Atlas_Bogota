@@ -127,7 +127,7 @@ var selector_values_after_sp_0 = {
             {
                 "value": "ses",
                 "desc": "desc"
-            },
+            }
         ]
     },
     "ji": {
@@ -405,31 +405,28 @@ var selector_values_after_sp_1 = {
                         "desc": "desc"
                     },
                     {
+                        "value": "w",
+                        "desc": "desc"
+                    },
+                    {
                         "value": "o60",
                         "desc": "desc"
                     },
                     {
-                        "value": "u9",
+                        "value": "u10",
+                        "desc": "desc"
+                    },
+
+                    {
+                        "value": "u20",
                         "desc": "desc"
                     },
                     {
-                        "value": "u19",
+                        "value": "vic",
                         "desc": "desc"
                     },
                     {
-                        "value": "un",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "imm",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "income",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "nc",
+                        "value": "ses",
                         "desc": "desc"
                     }
                 ]
@@ -477,31 +474,28 @@ var selector_values_after_sp_1 = {
                         "desc": "desc"
                     },
                     {
+                        "value": "w",
+                        "desc": "desc"
+                    },
+                    {
                         "value": "o60",
                         "desc": "desc"
                     },
                     {
-                        "value": "u9",
+                        "value": "u10",
+                        "desc": "desc"
+                    },
+
+                    {
+                        "value": "u20",
                         "desc": "desc"
                     },
                     {
-                        "value": "u19",
+                        "value": "vic",
                         "desc": "desc"
                     },
                     {
-                        "value": "un",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "imm",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "income",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "nc",
+                        "value": "ses",
                         "desc": "desc"
                     }
                 ]
@@ -525,31 +519,28 @@ var selector_values_after_sp_1 = {
                         "desc": "desc"
                     },
                     {
+                        "value": "w",
+                        "desc": "desc"
+                    },
+                    {
                         "value": "o60",
                         "desc": "desc"
                     },
                     {
-                        "value": "u9",
+                        "value": "u10",
+                        "desc": "desc"
+                    },
+
+                    {
+                        "value": "u20",
                         "desc": "desc"
                     },
                     {
-                        "value": "u19",
+                        "value": "vic",
                         "desc": "desc"
                     },
                     {
-                        "value": "un",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "imm",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "income",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "nc",
+                        "value": "ses",
                         "desc": "desc"
                     }
                 ]
@@ -581,31 +572,28 @@ var selector_values_after_sp_1 = {
                         "desc": "desc"
                     },
                     {
+                        "value": "w",
+                        "desc": "desc"
+                    },
+                    {
                         "value": "o60",
                         "desc": "desc"
                     },
                     {
-                        "value": "u9",
+                        "value": "u10",
+                        "desc": "desc"
+                    },
+
+                    {
+                        "value": "u20",
                         "desc": "desc"
                     },
                     {
-                        "value": "u19",
+                        "value": "vic",
                         "desc": "desc"
                     },
                     {
-                        "value": "un",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "imm",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "income",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "nc",
+                        "value": "ses",
                         "desc": "desc"
                     }
                 ]
@@ -641,31 +629,28 @@ var selector_values_after_sp_1 = {
                         "desc": "desc"
                     },
                     {
+                        "value": "w",
+                        "desc": "desc"
+                    },
+                    {
                         "value": "o60",
                         "desc": "desc"
                     },
                     {
-                        "value": "u9",
+                        "value": "u10",
+                        "desc": "desc"
+                    },
+
+                    {
+                        "value": "u20",
                         "desc": "desc"
                     },
                     {
-                        "value": "u19",
+                        "value": "vic",
                         "desc": "desc"
                     },
                     {
-                        "value": "un",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "imm",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "income",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "nc",
+                        "value": "ses",
                         "desc": "desc"
                     }
                 ]
