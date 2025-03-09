@@ -435,31 +435,23 @@ var selector_values_after_sp_1 = {
                 "title": "select_amenity",
                 "values": [
                     {
-                        "value": "h",
+                        "value":"h",
                         "desc": "desc"
                     },
                     {
-                        "value": "e1",
+                        "value":"e",
                         "desc": "desc"
                     },
                     {
-                        "value": "e2",
+                        "value":"g",
                         "desc": "desc"
                     },
                     {
-                        "value": "f",
+                        "value":"c",
                         "desc": "desc"
                     },
                     {
-                        "value": "s",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "a",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "g",
+                        "value":"ugs",
                         "desc": "desc"
                     }
                 ]
