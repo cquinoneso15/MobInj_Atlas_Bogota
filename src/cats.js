@@ -322,7 +322,7 @@ var selector_values_after_sp_1 = {
                         "desc": "desc"
                     },
                     {
-                        "value": "walk_usage",
+                        "value": "walk_use",
                         "desc": "desc"
                     }
                 ]
@@ -332,8 +332,8 @@ var selector_values_after_sp_1 = {
     },
     //subcategories for environmental disadvantages
     "env":{
-      "amenity":{
-          "v1":{
+      "amen":{
+          "amenity":{
               "title": "select_amenity",
               "values": [
                   {
