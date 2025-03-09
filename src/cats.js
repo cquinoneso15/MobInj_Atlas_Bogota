@@ -97,7 +97,7 @@ var selector_values_before_sp_0 = [
 // Selector values
 var selector_values_after_sp_0 = {
     "sg": {
-        "title": "sg",
+        "title": "select_sg",
         "values": [
             {
                 "value": "tp",
