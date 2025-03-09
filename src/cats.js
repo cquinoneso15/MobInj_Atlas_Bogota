@@ -263,7 +263,7 @@ var selector_values_after_sp_0 = {
                 "desc": "desc"
             }
         ]
-    }
+    },
     "summ": {}
 
 }
