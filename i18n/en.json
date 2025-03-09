@@ -91,6 +91,7 @@
     "radar_c": "Access to Cultural Leisure",
     "ugs": "Urban Green Spaces",
     "radar_ugs": "Access to Urban Green Spaces",
+    "stations": "Stations",
 
 
     "select_mot": "Select one mode of transport",
@@ -103,6 +104,7 @@
     "owns_car_sharing_membership": "Car-sharing membership",
 
     "select_exp": "UTAM risks",
+    "accidents": "Accidents",
     "fatalities": "Accidents with fatalities",
     "injuries": "Accidents with injuries",
     "acc_ped": "Accidents Involving Pedestrians",
@@ -127,14 +129,14 @@
     "% PT stations served in 700m": "% PT stations served in 700m",
     "intersection number/ha": "number/ha",
 
-    "select_beh": "Transport Mode Use",
+    "select_beh": "Transport Mode Share",
     "car_use": "Car Use",
     "bicycle_use": "Bicycle Use",
     "moto_use": "Motorcycle Use",
     "pt_use": "Public Transport Use",
     "walk_use": "Walking",
     "radar_walk_use": "Pedestrian Share",
-    "time": "Commuting Time",
+    "time": "Mean Commuting Time",
 	
 
     "desc": "",

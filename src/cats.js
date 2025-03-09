@@ -134,136 +134,172 @@ var selector_values_after_sp_0 = {
         "title": "select_justice",
         "values": [
             {
+                "value": "accidents",
+                "desc": "desc"
+            },
+            {
+                "value": "select_beh",
+                "desc": "desc"
+            },
+            {
+                "value": "time",
+                "desc": "desc"
+            },
+            {
+                "value": "pollution",
+                "desc": "desc"
+            }
+
+        ]
+    },
+
+    "env":{
+        "title": "select_justice",
+        "values": [
+            {
+                "value": "select_amenity",
+                "desc": "desc"
+            },
+            {
                 "value": "ava",
                 "desc": "desc"
             },
             {
-                "value": "beh",
+                "value": "stations",
                 "desc": "desc"
             },
             {
-                "value": "exp",
-                "desc": "desc"
-            },
-            {
-                "value": "acc",
+                "value": "m_slope",
                 "desc": "desc"
             }
-            ,
-            {
-                "value": "temp",
-                "desc": "desc"
-            }
+
         ]
     },
+
     "ji_v_sg": {
         "title": "select_justice",
         "desc": "desc",
         "values": [
             {
-                "value": "ava",
+                "value": "accidents",
                 "desc": "desc"
             },
             {
-                "value": "beh",
+                "value": "select_beh",
                 "desc": "desc"
             },
             {
-                "value": "exp",
+                "value": "time",
                 "desc": "desc"
             },
             {
-                "value": "acc",
-                "desc": "desc"
-            }
-            ,
-            {
-                "value": "temp",
+                "value": "pollution",
                 "desc": "desc"
             }
         ]
     },
-    "diff_sg": {
+    "spat":{
         "title": "select_justice",
         "desc": "desc",
         "values": [
             {
+                "value": "select_amenity",
+                "desc": "desc"
+            },
+            {
                 "value": "ava",
                 "desc": "desc"
             },
             {
-                "value": "beh",
+                "value": "stations",
+                "desc": "desc"
+            },
+            {
+                "value": "m_slope",
                 "desc": "desc"
             }
         ]
     },
+    "access":{
+        "title": "select_justice",
+        "desc": "desc",
+        "values": [
+            {
+                "value": "select_amenity",
+                "desc": "desc"
+            },
+            {
+                "value": "ava",
+                "desc": "desc"
+            },
+            {
+                "value": "stations",
+                "desc": "desc"
+            },
+            {
+                "value": "m_slope",
+                "desc": "desc"
+            }
+        ]
+    },
+    "mobinj":{
+        "title": "select_justice",
+        "desc": "desc",
+        "values": [
+            {
+                "value": "select_amenity",
+                "desc": "desc"
+            },
+            {
+                "value": "ava",
+                "desc": "desc"
+            },
+            {
+                "value": "stations",
+                "desc": "desc"
+            },
+            {
+                "value": "m_slope",
+                "desc": "desc"
+            }
+        ]
+    }
     "summ": {}
 
 }
+
+//subcategories of the disadvantages
 var selector_values_after_sp_1 = {
+    //no subcategories for social disadvantages
     "sg": {},
+    //subcategories for transport disadvantages
     "ji": {
-        "acc": {
-            "amenity": {
-                "title": "select_amenity",
+        "accidents": {
+            "accident_types": {
+                "title": "accidents",
                 "values": [
                     {
-                        "value": "h",
+                        "value": "fatalities",
                         "desc": "desc"
                     },
                     {
-                        "value": "e1",
+                        "value": "injuries",
                         "desc": "desc"
                     },
                     {
-                        "value": "e2",
+                        "value": "acc_ped",
                         "desc": "desc"
                     },
                     {
-                        "value": "f",
+                        "value": "acc_car",
                         "desc": "desc"
                     },
                     {
-                        "value": "s",
+                        "value": "acc_bike",
                         "desc": "desc"
                     },
                     {
-                        "value": "a",
-                        "desc": "desc"
-                    }
-                    ,
-                    {
-                        "value": "g",
-                        "desc": "desc"
-                    }
-                ]
-            }
-        },
-        "exp": {
-            "v1": {
-                "title": "select_exp",
-                "values": [
-                    {
-                        "value": "accidents",
-                        "desc": "desc"
-                    }
-                ]
-            }
-        },
-        "ava": {
-            "v1": {
-                "title": "select_ava",
-                "values": [
-                    {
-                        "value": "acc_pt",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "road_density",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "intersection_density",
+                        "value": "acc_moto",
                         "desc": "desc"
                     }
                 ]
@@ -274,15 +310,19 @@ var selector_values_after_sp_1 = {
                 "title": "select_beh",
                 "values": [
                     {
-                        "value": "car_usage",
+                        "value": "car_use",
                         "desc": "desc"
                     },
                     {
-                        "value": "pt_usage",
+                        "value": "pt_use",
                         "desc": "desc"
                     },
                     {
-                        "value": "irr_pt_usage",
+                        "value": "bicycle_use",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "moto_use",
                         "desc": "desc"
                     },
                     {
@@ -291,29 +331,74 @@ var selector_values_after_sp_1 = {
                     }
                 ]
             }
-        },
-        "temp": {
-            "v1": {
-                "title": "select_temp",
-                "values": [
-                    {
-                        "value": "pt_frequ",
-                        "desc": "desc"
-                    }
-                    ,
-                    {
-                        "value": "dur_15_30",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "dur_30",
-                        "desc": "desc"
-                    }
-                ]
-            }
         }
 
     },
+    //subcategories for environmental disadvantages
+    "env":{
+      "amenity":{
+          "pois":{
+              "title": "select_amenity",
+              "values": [
+                  {
+                      "value":"h",
+                      "desc": "desc"
+                  },
+                  {
+                      "value":"e",
+                      "desc": "desc"
+                  },
+                  {
+                      "value":"g",
+                      "desc": "desc"
+                  },
+                  {
+                      "value":"c",
+                      "desc": "desc"
+                  },
+                  {
+                      "value":"ugs",
+                      "desc": "desc"
+                  }
+              ]
+          }
+      },
+        "ava":{
+          "infrastructure":{
+              "title": "select_ava",
+              "values": [
+                  {
+                      "value": "cycleway_density",
+                      "desc": "desc"
+                  },
+                  {
+                      "value": "street_density",
+                      "desc": "desc"
+                  },
+                  {
+                      "value": "walk_inf",
+                      "desc": "desc"
+                  }
+              ]
+          }
+        },
+        "stations":{
+          "station":{
+              "title": "stations",
+              "values": [
+                  {
+                      "value": "PT_stops",
+                      "desc": "desc"
+                  },
+                  {
+                      "value": "bike_sharing",
+                      "desc": "desc"
+                  },
+              ]
+          }
+        }
+    },
+    //subcategories for mobility disadvantages
     "ji_v_sg": {
         "acc": {
             "v1": {
