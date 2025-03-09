@@ -138,7 +138,7 @@ var selector_values_after_sp_0 = {
                 "desc": "desc"
             },
             {
-                "value": "select_beh",
+                "value": "beh",
                 "desc": "desc"
             },
             {
@@ -178,7 +178,6 @@ var selector_values_after_sp_0 = {
 
     "ji_v_sg": {
         "title": "select_justice",
-        "desc": "desc",
         "values": [
             {
                 "value": "accidents",
@@ -200,7 +199,6 @@ var selector_values_after_sp_0 = {
     },
     "spat":{
         "title": "select_justice",
-        "desc": "desc",
         "values": [
             {
                 "value": "select_amenity",
@@ -222,7 +220,6 @@ var selector_values_after_sp_0 = {
     },
     "access":{
         "title": "select_justice",
-        "desc": "desc",
         "values": [
             {
                 "value": "select_amenity",
@@ -244,7 +241,6 @@ var selector_values_after_sp_0 = {
     },
     "mobinj":{
         "title": "select_justice",
-        "desc": "desc",
         "values": [
             {
                 "value": "select_amenity",
@@ -275,7 +271,7 @@ var selector_values_after_sp_1 = {
     //subcategories for transport disadvantages
     "ji": {
         "accidents": {
-            "accident_types": {
+            "v1": {
                 "title": "accidents",
                 "values": [
                     {
@@ -337,7 +333,7 @@ var selector_values_after_sp_1 = {
     //subcategories for environmental disadvantages
     "env":{
       "amenity":{
-          "pois":{
+          "v1":{
               "title": "select_amenity",
               "values": [
                   {
@@ -364,7 +360,7 @@ var selector_values_after_sp_1 = {
           }
       },
         "ava":{
-          "infrastructure":{
+          "v1":{
               "title": "select_ava",
               "values": [
                   {
@@ -383,7 +379,7 @@ var selector_values_after_sp_1 = {
           }
         },
         "stations":{
-          "station":{
+          "v1":{
               "title": "stations",
               "values": [
                   {
