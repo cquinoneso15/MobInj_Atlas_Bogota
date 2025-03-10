@@ -201,7 +201,7 @@ var selector_values_after_sp_0 = {
         "title": "select_justice",
         "values": [
             {
-                "value": "select_amenity",
+                "value": "amenities",
                 "desc": "desc"
             },
             {
@@ -222,7 +222,7 @@ var selector_values_after_sp_0 = {
         "title": "select_justice",
         "values": [
             {
-                "value": "select_amenity",
+                "value": "amenities",
                 "desc": "desc"
             },
             {
@@ -243,7 +243,7 @@ var selector_values_after_sp_0 = {
         "title": "select_justice",
         "values": [
             {
-                "value": "select_amenity",
+                "value": "amenities",
                 "desc": "desc"
             },
             {
@@ -675,6 +675,42 @@ var selector_values_after_sp_1 = {
                     }
                 ]
             }
+        },
+        "ava":{
+            "v1":{
+                "title": "select_sg",
+                "values": [
+                    {
+                        "value": "tp",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "w",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "o60",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "u10",
+                        "desc": "desc"
+                    },
+
+                    {
+                        "value": "u20",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "vic",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "ses",
+                        "desc": "desc"
+                    }
+                ]
+            },
         }
     },
 
