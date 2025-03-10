@@ -824,7 +824,65 @@ var selector_values_after_sp_1 = {
             }
         }
     },
-
+    //subcategories for accessibility disadvantages
+    "access":{
+        "amenities":{
+            "amenity":{
+                "title": "amenities",
+                "values": [
+                    {
+                        "value":"h",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"e",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"g",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"c",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"ugs",
+                        "desc": "desc"
+                    }
+                ]
+            },
+            "mot": {
+                "title": "accidents",
+                "values": [
+                    {
+                        "value": "fatalities",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "injuries",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "acc_ped",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "acc_car",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "acc_bike",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "acc_moto",
+                        "desc": "desc"
+                    }
+                ]
+            }
+        }
+    },
 
     "diff_sg": {
         "ava": {
