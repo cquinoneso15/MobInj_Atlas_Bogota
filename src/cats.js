@@ -461,9 +461,8 @@ var selector_values_after_sp_1 = {
                 ]
             }
         },
-
-        "exp": {
-            "v1": {
+        "select_beh":{
+            "v1":{
                 "title": "select_sg",
                 "values": [
                     {
@@ -497,128 +496,34 @@ var selector_values_after_sp_1 = {
                     }
                 ]
             },
-            "amenity": {
-                "title": "select_exp",
-                "values": [
-                    {
-                        "value": "accidents",
-                        "desc": "desc"
-                    }
-                ]
-            }
-        },
-        "ava": {
-            "v1": {
-                "title": "select_sg",
-                "values": [
-                    {
-                        "value": "tp",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "w",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "o60",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "u10",
-                        "desc": "desc"
-                    },
-
-                    {
-                        "value": "u20",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "vic",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "ses",
-                        "desc": "desc"
-                    }
-                ]
-            },
-            "amenity": {
-                "title": "select_ava",
-                "values": [
-                    {
-                        "value": "acc_pt",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "road_density",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "intersection_density",
-                        "desc": "desc"
-                    }
-                ]
-            }
-        },
-        "beh": {
-            "v1": {
-                "title": "select_sg",
-                "values": [
-                    {
-                        "value": "tp",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "w",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "o60",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "u10",
-                        "desc": "desc"
-                    },
-
-                    {
-                        "value": "u20",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "vic",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "ses",
-                        "desc": "desc"
-                    }
-                ]
-            },
-            "amenity": {
+            "mot": {
                 "title": "select_beh",
                 "values": [
                     {
-                        "value": "car_usage",
+                        "value": "car_use",
                         "desc": "desc"
                     },
                     {
-                        "value": "pt_usage",
+                        "value": "pt_use",
                         "desc": "desc"
                     },
                     {
-                        "value": "irr_pt_usage",
+                        "value": "bicycle_use",
                         "desc": "desc"
                     },
                     {
-                        "value": "walk_usage",
+                        "value": "moto_use",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "walk_use",
                         "desc": "desc"
                     }
                 ]
             }
         },
-        "temp": {
-            "v1": {
+        "time":{
+            "v1":{
                 "title": "select_sg",
                 "values": [
                     {
@@ -652,27 +557,128 @@ var selector_values_after_sp_1 = {
                     }
                 ]
             },
-            "amenity": {
-                "title": "select_temp",
+            "mot":{
+                "title": "time",
                 "values": [
                     {
-                        "value": "pt_frequ",
+                        "value": "time",
                         "desc": "desc"
                     }
-                    ,
+                ]
+            }
+        },
+        "pollution":{
+            "v1":{
+                "title": "select_sg",
+                "values": [
                     {
-                        "value": "dur_15_30",
+                        "value": "tp",
                         "desc": "desc"
                     },
                     {
-                        "value": "dur_30",
+                        "value": "w",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "o60",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "u10",
+                        "desc": "desc"
+                    },
+
+                    {
+                        "value": "u20",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "vic",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "ses",
+                        "desc": "desc"
+                    }
+                ]
+            },
+            "mot": {
+                "title": "pollution",
+                "values": [
+                    {
+                        "value": "pollution",
                         "desc": "desc"
                     }
                 ]
             }
         }
-
     },
+    //subcategories for spatial disadvantages
+    "spat":{
+        "amenities":{
+            "v1":{
+                "title": "select_sg",
+                "values": [
+                    {
+                        "value": "tp",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "w",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "o60",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "u10",
+                        "desc": "desc"
+                    },
+
+                    {
+                        "value": "u20",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "vic",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "ses",
+                        "desc": "desc"
+                    }
+                ]
+            },
+            "amenity":{
+                "title": "amenities",
+                "values": [
+                    {
+                        "value":"h",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"e",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"g",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"c",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"ugs",
+                        "desc": "desc"
+                    }
+                ]
+            }
+        }
+    },
+
+
     "diff_sg": {
         "ava": {
             "v1": {
