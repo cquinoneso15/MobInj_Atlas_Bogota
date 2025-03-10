@@ -222,19 +222,19 @@ var selector_values_after_sp_0 = {
         "title": "select_justice",
         "values": [
             {
-                "value": "amenities",
+                "value": "accidents",
                 "desc": "desc"
             },
             {
-                "value": "ava",
+                "value": "select_beh",
                 "desc": "desc"
             },
             {
-                "value": "stations",
+                "value": "time",
                 "desc": "desc"
             },
             {
-                "value": "m_slope",
+                "value": "pollution",
                 "desc": "desc"
             }
         ]
@@ -243,19 +243,19 @@ var selector_values_after_sp_0 = {
         "title": "select_justice",
         "values": [
             {
-                "value": "amenities",
+                "value": "accidents",
                 "desc": "desc"
             },
             {
-                "value": "ava",
+                "value": "select_beh",
                 "desc": "desc"
             },
             {
-                "value": "stations",
+                "value": "time",
                 "desc": "desc"
             },
             {
-                "value": "m_slope",
+                "value": "pollution",
                 "desc": "desc"
             }
         ]
@@ -774,7 +774,7 @@ var selector_values_after_sp_1 = {
                     {
                         "value": "bike_sharing",
                         "desc": "desc"
-                    },
+                    }
                 ]
             }
         },
@@ -826,9 +826,9 @@ var selector_values_after_sp_1 = {
     },
     //subcategories for accessibility disadvantages
     "access":{
-        "amenities":{
-            "amenity":{
-                "title": "amenities",
+        "accidents": {
+            "v1":{
+                "title": "env",
                 "values": [
                     {
                         "value":"h",
@@ -849,10 +849,34 @@ var selector_values_after_sp_1 = {
                     {
                         "value":"ugs",
                         "desc": "desc"
+                    },
+                    {
+                        "value": "cycleway_density",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "street_density",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "walk_inf",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "PT_stops",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "bike_sharing",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "m_slope",
+                        "desc": "desc"
                     }
                 ]
             },
-            "mot": {
+            "mot":{
                 "title": "accidents",
                 "values": [
                     {
@@ -877,6 +901,202 @@ var selector_values_after_sp_1 = {
                     },
                     {
                         "value": "acc_moto",
+                        "desc": "desc"
+                    }
+                ]
+            }
+        },
+        "select_beh":{
+            "v1":{
+                "title": "env",
+                "values": [
+                    {
+                        "value":"h",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"e",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"g",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"c",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"ugs",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "cycleway_density",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "street_density",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "walk_inf",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "PT_stops",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "bike_sharing",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "m_slope",
+                        "desc": "desc"
+                    }
+                ]
+            },
+            "mot": {
+                "title": "select_beh",
+                "values": [
+                    {
+                        "value": "car_use",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "pt_use",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "bicycle_use",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "moto_use",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "walk_use",
+                        "desc": "desc"
+                    }
+                ]
+            }
+        },
+        "time":{
+            "v1":{
+                "title": "env",
+                "values": [
+                    {
+                        "value":"h",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"e",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"g",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"c",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"ugs",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "cycleway_density",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "street_density",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "walk_inf",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "PT_stops",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "bike_sharing",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "m_slope",
+                        "desc": "desc"
+                    }
+                ]
+            },
+            "mot":{
+                "title": "time",
+                "values": [
+                    {
+                        "value":"time",
+                        "desc": "desc"
+                    }
+                ]
+            }
+        },
+        "pollution":{
+            "v1":{
+                "title": "env",
+                "values": [
+                    {
+                        "value":"h",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"e",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"g",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"c",
+                        "desc": "desc"
+                    },
+                    {
+                        "value":"ugs",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "cycleway_density",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "street_density",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "walk_inf",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "PT_stops",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "bike_sharing",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "m_slope",
+                        "desc": "desc"
+                    }
+                ]
+            },
+            "mot":{
+                "title": "pollution",
+                "values": [
+                    {
+                        "value":"pollution",
                         "desc": "desc"
                     }
                 ]
