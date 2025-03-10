@@ -396,67 +396,72 @@ var selector_values_after_sp_1 = {
     },
     //subcategories for mobility disadvantages
     "ji_v_sg": {
-        "acc": {
-            "v1": {
-                "title": "select_sg",
-                "values": [
-                    {
-                        "value": "tp",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "w",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "o60",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "u10",
-                        "desc": "desc"
-                    },
+        "accidents": {
+          "v1":{
+              "title": "select_sg",
+              "values": [
+                  {
+                      "value": "tp",
+                      "desc": "desc"
+                  },
+                  {
+                      "value": "w",
+                      "desc": "desc"
+                  },
+                  {
+                      "value": "o60",
+                      "desc": "desc"
+                  },
+                  {
+                      "value": "u10",
+                      "desc": "desc"
+                  },
 
-                    {
-                        "value": "u20",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "vic",
-                        "desc": "desc"
-                    },
-                    {
-                        "value": "ses",
-                        "desc": "desc"
-                    }
-                ]
-            },
-            "amenity": {
-                "title": "select_amenity",
+                  {
+                      "value": "u20",
+                      "desc": "desc"
+                  },
+                  {
+                      "value": "vic",
+                      "desc": "desc"
+                  },
+                  {
+                      "value": "ses",
+                      "desc": "desc"
+                  }
+              ]
+          },
+            "mot": {
+                "title": "accidents",
                 "values": [
                     {
-                        "value":"h",
+                        "value": "fatalities",
                         "desc": "desc"
                     },
                     {
-                        "value":"e",
+                        "value": "injuries",
                         "desc": "desc"
                     },
                     {
-                        "value":"g",
+                        "value": "acc_ped",
                         "desc": "desc"
                     },
                     {
-                        "value":"c",
+                        "value": "acc_car",
                         "desc": "desc"
                     },
                     {
-                        "value":"ugs",
+                        "value": "acc_bike",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "acc_moto",
                         "desc": "desc"
                     }
                 ]
             }
         },
+
         "exp": {
             "v1": {
                 "title": "select_sg",
