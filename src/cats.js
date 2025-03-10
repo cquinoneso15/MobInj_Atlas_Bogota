@@ -711,6 +711,117 @@ var selector_values_after_sp_1 = {
                     }
                 ]
             },
+            "mot":{
+                "title": "select_ava",
+                "values": [
+                    {
+                        "value": "cycleway_density",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "street_density",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "walk_inf",
+                        "desc": "desc"
+                    }
+                ]
+            }
+        },
+        "stations":{
+            "v1":{
+                "title": "select_sg",
+                "values": [
+                    {
+                        "value": "tp",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "w",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "o60",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "u10",
+                        "desc": "desc"
+                    },
+
+                    {
+                        "value": "u20",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "vic",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "ses",
+                        "desc": "desc"
+                    }
+                ]
+            },
+            "mot": {
+                "title": "stations",
+                "values": [
+                    {
+                        "value": "PT_stops",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "bike_sharing",
+                        "desc": "desc"
+                    },
+                ]
+            }
+        },
+        "m_slope":{
+            "v1":{
+                "title": "select_sg",
+                "values": [
+                    {
+                        "value": "tp",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "w",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "o60",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "u10",
+                        "desc": "desc"
+                    },
+
+                    {
+                        "value": "u20",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "vic",
+                        "desc": "desc"
+                    },
+                    {
+                        "value": "ses",
+                        "desc": "desc"
+                    }
+                ]
+            },
+            "mot": {
+                "title": "m_slope",
+                "values": [
+                    {
+                        "value": "m_slope",
+                        "desc": "desc"
+                    }
+                ]
+            }
         }
     },
 
