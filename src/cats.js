@@ -79,10 +79,10 @@ var selector_values_before_sp_0 = [
         "value": "access",
         "desc": "access_desc"
     },
-    {
+    /*{
         "value": "mobinj",
         "desc": "mobinj_desc"
-    },
+    },*/
     {
         "value": "summ",
         "desc": "desc_summ"
@@ -239,7 +239,7 @@ var selector_values_after_sp_0 = {
             }
         ]
     },
-    "mobinj":{
+    /*"mobinj":{
         "title": "select_justice",
         "values": [
             {
@@ -259,7 +259,7 @@ var selector_values_after_sp_0 = {
                 "desc": "desc"
             }
         ]
-    },
+    },*/
     "summ": {}
 
 }
