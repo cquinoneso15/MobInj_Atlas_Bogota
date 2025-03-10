@@ -334,7 +334,7 @@ var selector_values_after_sp_1 = {
     "env":{
         "amenities": {
             "amenity": {
-                "title": "select_amenity",
+                "title": "amenities",
                 "values": [
                   {
                       "value":"h",
