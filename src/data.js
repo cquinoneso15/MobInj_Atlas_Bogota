@@ -80,11 +80,7 @@ async function mergeGeoJSONandCSV2(geojsonPath, csvPath,csvPath2) {
 function convertNumericPropertiesToFloat(properties) {
     const floatProperties = {};
     for (const key in properties) {
-        if (isNumeric(properties[key])) {
-            floatProperties[key] = parseFloat(properties[key].replace(",", "."));
-        } else {
-            floatProperties[key] = properties[key];
-        }
+        floatProperties[key] = isNumeric(properties[key]) ? parseFloat(properties[key]) : properties[key];
     }
     return floatProperties;
 }
