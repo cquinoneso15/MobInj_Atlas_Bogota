@@ -96,11 +96,29 @@ mergeGeoJSONandCSV(jsonFilePath_map, csvFilePathji)
         // Do something with the merged GeoJSON
         ji_geojson= mergedGeoJSON;
     });
+let env_geojson;
+mergeGeoJSONandCSV(jsonFilePath_map, csvFilePathenv)
+    .then(mergedGeoJSON => {
+        env_geojson= mergedGeoJSON;
+    });
+
 let bi_geojson;
 mergeGeoJSONandCSV2(jsonFilePath_map, csvFilePathsg,csvFilePathji)
     .then(mergedGeoJSON => {
         // Do something with the merged GeoJSON
         bi_geojson= mergedGeoJSON;
+    });
+
+let spat_geojson;
+mergeGeoJSONandCSV2(jsonFilePath_map, csvFilePathsg, csvFilePathenv)
+    .then(mergedGeoJSON => {
+        spat_geojson= mergedGeoJSON;
+    });
+
+let access_geojson;
+mergeGeoJSONandCSV2(jsonFilePath_map, csvFilePathji, csvFilePathenv)
+    .then(mergedGeoJSON => {
+        access_geojson= mergedGeoJSON;
     });
 
 var sg_geojson;
