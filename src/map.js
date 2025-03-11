@@ -236,6 +236,19 @@ function changeMap() {
             else if (selected_values["v1"] == "m_slope" ) {//Carlos
                 propertyName_env="Mean slope";
             }
+            if (propertyName_ji) {
+                if(env_geojson == null || env_geojson === 'undefined'){
+                    mergeGeoJSONandCSV(jsonFilePath_map, csvFilePathji)
+                        .then(mergedGeoJSON => {
+                            // Do something with the merged GeoJSON
+                            env_geojson= mergedGeoJSON;
+                            handleJsonSeq(selectFeatureByProperty(env_geojson, propertyName_ji),propertyName_ji)
+                        });
+                }
+                else{
+                    handleJsonSeq(selectFeatureByProperty(env_geojson, propertyName_ji),propertyName_ji)}
+            }
+            break;
 
         //mobility disadvantages
         case "ji_v_sg":
@@ -391,15 +404,15 @@ function changeMap() {
 
             if (propertyName_env && propertyName) {
 
-                if (bi_geojson == null || bi_geojson === 'undefined') {
+                if (spat_geojson == null || spat_geojson === 'undefined') {
                     mergeGeoJSONandCSV2(jsonFilePath_map, csvFilePathji,csvFilePathsg)
                         .then(mergedGeoJSON => {
                             // Do something with the merged GeoJSON
-                            bi_geojson = mergedGeoJSON;
-                            handleJsonBiv(selectFeaturesWithTwoProperties(bi_geojson, propertyName,propertyName_env ))
+                            spat_geojson = mergedGeoJSON;
+                            handleJsonBiv(selectFeaturesWithTwoProperties(spat_geojson, propertyName,propertyName_env ))
                         });
                 } else {
-                    handleJsonBiv(selectFeaturesWithTwoProperties(bi_geojson, propertyName, propertyName_env))
+                    handleJsonBiv(selectFeaturesWithTwoProperties(spat_geojson, propertyName, propertyName_env))
                 }
             }
         break;
@@ -489,15 +502,15 @@ function changeMap() {
             }
             if (propertyName_env && propertyName_ji) {
 
-                if (bi_geojson == null || bi_geojson === 'undefined') {
+                if (access_geojson == null || access_geojson === 'undefined') {
                     mergeGeoJSONandCSV2(jsonFilePath_map, csvFilePathji,csvFilePathsg)
                         .then(mergedGeoJSON => {
                             // Do something with the merged GeoJSON
-                            bi_geojson = mergedGeoJSON;
-                            handleJsonBiv(selectFeaturesWithTwoProperties(bi_geojson, propertyName_ji,propertyName_env ))
+                            access_geojson = mergedGeoJSON;
+                            handleJsonBiv(selectFeaturesWithTwoProperties(access_geojson, propertyName_ji,propertyName_env ))
                         });
                 } else {
-                    handleJsonBiv(selectFeaturesWithTwoProperties(bi_geojson, propertyName_ji, propertyName_env))
+                    handleJsonBiv(selectFeaturesWithTwoProperties(access_geojson, propertyName_ji, propertyName_env))
                 }
             }
             break;
