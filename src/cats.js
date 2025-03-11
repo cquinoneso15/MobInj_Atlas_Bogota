@@ -327,6 +327,28 @@ var selector_values_after_sp_1 = {
                     }
                 ]
             }
+        },
+        "time": {
+            "v1":{
+                "title": "time",
+                "values": [
+                    {
+                        "value": "time",
+                        "desc": "desc"
+                    }
+                ]
+            }
+        },
+        "pollution": {
+            "v1":{
+                "title": "pollution",
+                "values": [
+                    {
+                        "value": "pollution",
+                        "desc": "desc"
+                    }
+                ]
+            }
         }
 
     },

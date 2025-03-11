@@ -44,8 +44,8 @@ function selectFeatureByProperty(geojson, propertyName) {
             "geometry": feature.geometry,
             "properties": {
                 // Include only the specified property
-                 "Value": feature.properties[propertyName],
-                "Delegation": feature.properties.alt_name_f,
+                "Value": feature.properties[propertyName],
+                "Delegation": feature.properties.nom_upz,
                 "Unit": extractStringInBrackets(propertyName)
             }
         }))
@@ -64,7 +64,7 @@ function selectFeaturesWithTwoProperties(geojson, firstPropertyName, secondPrope
                 ["Social"]: feature.properties[firstPropertyName],
                 "Unit_mobil": extractStringInBrackets(secondPropertyName),
                 "Unit_social": extractStringInBrackets(firstPropertyName),
-                "Delegation": feature.properties.alt_name_f
+                "Delegation": feature.properties.nom_upz
             }
         }))
     };
@@ -98,33 +98,31 @@ function changeMap() {
 
     generateLegend("", true);
     switch (selected_values["map_type"]) {
+        //social disadvantages
         case "sg":
             var propertyName;
-            if ( selected_values["justice"] == "tp" ) {//CYRINE
-                propertyName="Population [nb]";
+            if ( selected_values["justice"] == "tp" ) {//Carlos
+                propertyName="Total Population";
 
             }
-            else if (selected_values["justice"] == "o60" ) {//CYRINE
-                propertyName="Older people [%]";
+            else if (selected_values["justice"] == "w" ) {//Carlos
+                propertyName="Women";
             }
-            else if ( selected_values["justice"] == "un" ) {//CYRINE
-                propertyName=" Unemployed [%]";
+            else if ( selected_values["justice"] == "o60" ) {//Carlos
+                propertyName="Older people";
 
             }
-            else if ( selected_values["justice"] == "income" ) {//CYRINE
-                propertyName="Poverty rate [%]";
+            else if ( selected_values["justice"] == "u10" ) {//Carlos
+                propertyName="Children";
             }
-            else if ( selected_values["justice"] == "u9" ) {//CYRINE
-                propertyName="Children [%]";
+            else if ( selected_values["justice"] == "u20" ) {//Carlos
+                propertyName="Teenagers";
             }
-            else if ( selected_values["justice"] == "u19" ) {//CYRINE
-                propertyName="Teenagers [%]";
+            else if ( selected_values["justice"] == "vic" ) {//Carlos
+                propertyName="Victim Population";
             }
-            else if ( selected_values["justice"] == "nc" ) {//CYRINE
-                propertyName=" Population with no access to car [%]";
-            }
-            else if ( selected_values["justice"] == "imm" ) {//CYRINE
-                propertyName="Intrant migrant between 2009 et 2014 [%]";
+            else if ( selected_values["justice"] == "ses" ) {//Carlos
+                propertyName="SES 1 and 2";
             }
             if (propertyName) {
                 if(sg_geojson == null || sg_geojson === 'undefined'){
@@ -139,69 +137,55 @@ function changeMap() {
                 handleJsonSeq(selectFeatureByProperty(sg_geojson, propertyName),propertyName)}
             }
             break;
+        //transport disadvantages
         case "ji":
             var propertyName_ji;
-            if (  selected_values["amenity"] == "h" ) {//CYRINE
-                propertyName_ji="1Km proximity to Health [% population] ";
+            if (  selected_values["v1"] == "fatalities" ) {//Carlos
+                propertyName_ji="Accidents (fatalities)";
             }
-            else if (  selected_values["amenity"] == "s" ) {//CYRINE
-                propertyName_ji="1Km proximity to Sport [% population] ";
+            else if (  selected_values["v1"] == "injuries" ) {//Carlos
+                propertyName_ji="Accidents (injuries)";
 
             }
-            else if ( selected_values["amenity"] == "f" ) {//CYRINE
-                propertyName_ji="1Km proximity to Food [% area]";
+            else if ( selected_values["v1"] == "acc_ped" ) {//Carlos
+                propertyName_ji="Accidents (pedestrians)";
             }
-            else if (selected_values["amenity"] == "a" ) {//CYRINE
-                propertyName_ji="1Km proximity to Administration [% area]";
+            else if (selected_values["v1"] == "acc_car" ) {//Carlos
+                propertyName_ji="Accidents (cars)";
 
             }
-            else if (  selected_values["amenity"] == "e1" ) {//CYRINE
-                propertyName_ji="1Km proximity to school [% population] ";
-
-
-            }
-            else if ( selected_values["amenity"] == "e2" ) {//CYRINE
-                propertyName_ji="1Km proximity to elementary or highschool [% population] ";
+            else if (  selected_values["v1"] == "acc_bike" ) {//Carlos
+                propertyName_ji="Accidents (bicycles)";
 
             }
-            else if ( selected_values["amenity"] == "g" ) {//CYRINE
-                propertyName_ji="1Km proximity to Green space [% area]";
-            }
-
-            else if (  selected_values["v1"] == "accidents" ) {//CYRINE
-                propertyName_ji="Accidents [Nb/ha]";
+            else if ( selected_values["v1"] == "acc_moto" ) {//Carlos
+                propertyName_ji="Accidents (motorcycles)";
 
             }
-            else if (   selected_values["v1"] == "acc_pt" ) {//CYRINE
-                propertyName_ji="700m proximity to PT [% area]";
-            }
-            else if ( selected_values["v1"] == "intersection_density" ) {//CYRINE
-                propertyName_ji="Intersection [nb /ha]";
-            }
-            else if (  selected_values["v1"] == "road_density" ) {//CYRINE
-                propertyName_ji="Road density [km/ha]";
+            else if ( selected_values["v1"] == "car_use" ) {//Carlos
+                propertyName_ji="Car use";
             }
 
-            else if (  selected_values["v1"] == "pt_frequ" ) {//CYRINE
-                propertyName_ji="Frequency PT [min]";
+            else if (  selected_values["v1"] == "pt_use" ) {//Carlos
+                propertyName_ji="Use of PT";
+
             }
-            else if ( selected_values["v1"] == "dur_15_30" ) {//CYRINE
-                propertyName_ji="Commuting for 15-30 min [% active pop]";
+            else if (  selected_values["v1"] == "bicycle_use" ) {//Carlos
+                propertyName_ji="Bicycle Use";
             }
-            else if (   selected_values["v1"] == "dur_30" ) {//CYRINE
-                propertyName_ji="Commuting for >30 min [% active pop]";
+            else if ( selected_values["v1"] == "moto_use" ) {//Carlos
+                propertyName_ji="Motorcycle use";
+            }
+            else if (  selected_values["v1"] == "walk_use" ) {//Carlos
+                propertyName_ji="Walking";
             }
 
-            else if ( selected_values["v1"] == "pt_usage" ) {//CYRINE
-                propertyName_ji="PT for commuting [%active  pop]"}
-            else if ( selected_values["v1"] == "irr_pt_usage" ) {//CYRINE
-                propertyName_ji="Irregular transport for commuting [%active  pop]"}
-
-            else if ( selected_values["v1"] == "walk_usage" ) {//CYRINE
-                propertyName_ji="Walking for commuting [%active  pop]"}
-
-            else if ( selected_values["v1"] == "car_usage" ) {//CYRINE
-                propertyName_ji="Car for commuting [%active  pop]"}
+            else if (  selected_values["v1"] == "time" ) {//Carlos
+                propertyName_ji="Commuting time";
+            }
+            else if ( selected_values["v1"] == "pollution" ) {//Carlos
+                propertyName_ji="Pollution PM2.5";
+            }
 
             if (propertyName_ji) {
                 if(ji_geojson == null || ji_geojson === 'undefined'){
@@ -216,6 +200,41 @@ function changeMap() {
                     handleJsonSeq(selectFeatureByProperty(ji_geojson, propertyName_ji),propertyName_ji)}
             }
             break;
+        //environmental disadvantages
+        case "env":
+            var propertyName_env;
+            if (selected_values["amenity"] == "h" ) {//Carlos
+                propertyName_env="Health Services";
+            }
+            else if (selected_values["amenity"] == "e" ) {//Carlos
+                propertyName_env="Schools";
+            }
+            else if (selected_values["amenity"] == "g" ) {//Carlos
+                propertyName_env="Government Services";
+            }
+            else if (selected_values["amenity"] == "c" ) {//Carlos
+                propertyName_env="Cultural Activites";
+            }
+            else if (selected_values["amenity"] == "ugs" ) {//Carlos
+                propertyName_env="UGS";
+            }
+            else if (selected_values["v1"] == "cycleway_density" ) {//Carlos
+                propertyName_env="Cycle paths";
+            }
+            else if (selected_values["v1"] == "street_density" ) {//Carlos
+                propertyName_env="Streets";
+            }
+            else if (selected_values["v1"] == "walk_inf" ) {//Carlos
+                propertyName_env="Sidewalks";
+            }
+            else if (selected_values["v1"] == "PT_stops" ) {//Carlos
+                propertyName_env="PT Stations";
+            }
+            else if (selected_values["v1"] == "bike_sharing" ) {//Carlos
+                propertyName_env="Bike sharing";
+            }
+
+        //mobility disadvantages
         case "ji_v_sg":
             var propertyName;
             var propertyName_ji;
