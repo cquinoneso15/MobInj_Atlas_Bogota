@@ -355,7 +355,7 @@ var selector_values_after_sp_1 = {
     //subcategories for environmental disadvantages
     "env":{
         "amenities": {
-            "amenity": {
+            "v1": {
                 "title": "amenities",
                 "values": [
                   {

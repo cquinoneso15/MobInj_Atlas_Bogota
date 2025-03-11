@@ -203,19 +203,19 @@ function changeMap() {
         //environmental disadvantages
         case "env":
             var propertyName_env;
-            if (selected_values["amenity"] == "h" ) {//Carlos
+            if (selected_values["v1"] == "h" ) {//Carlos
                 propertyName_env="Health Services";
             }
-            else if (selected_values["amenity"] == "e" ) {//Carlos
+            else if (selected_values["v1"] == "e" ) {//Carlos
                 propertyName_env="Schools";
             }
-            else if (selected_values["amenity"] == "g" ) {//Carlos
+            else if (selected_values["v1"] == "g" ) {//Carlos
                 propertyName_env="Government Services";
             }
-            else if (selected_values["amenity"] == "c" ) {//Carlos
+            else if (selected_values["v1"] == "c" ) {//Carlos
                 propertyName_env="Cultural Activites";
             }
-            else if (selected_values["amenity"] == "ugs" ) {//Carlos
+            else if (selected_values["v1"] == "ugs" ) {//Carlos
                 propertyName_env="UGS";
             }
             else if (selected_values["v1"] == "cycleway_density" ) {//Carlos
