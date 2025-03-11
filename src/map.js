@@ -236,17 +236,17 @@ function changeMap() {
             else if (selected_values["v1"] == "m_slope" ) {//Carlos
                 propertyName_env="Mean slope";
             }
-            if (propertyName_ji) {
+            if (propertyName_env) {
                 if(env_geojson == null || env_geojson === 'undefined'){
                     mergeGeoJSONandCSV(jsonFilePath_map, csvFilePathji)
                         .then(mergedGeoJSON => {
                             // Do something with the merged GeoJSON
                             env_geojson= mergedGeoJSON;
-                            handleJsonSeq(selectFeatureByProperty(env_geojson, propertyName_ji),propertyName_ji)
+                            handleJsonSeq(selectFeatureByProperty(env_geojson, propertyName_env),propertyName_env)
                         });
                 }
                 else{
-                    handleJsonSeq(selectFeatureByProperty(env_geojson, propertyName_ji),propertyName_ji)}
+                    handleJsonSeq(selectFeatureByProperty(env_geojson, propertyName_env),propertyName_env)}
             }
             break;
 
