@@ -414,6 +414,17 @@ var selector_values_after_sp_1 = {
                   },
               ]
           }
+        },
+        "m_slope":{
+            "v1":{
+                "title": "m_slope",
+                "values": [
+                    {
+                        "value": "m_slope",
+                        "desc": "desc"
+                    }
+                ]
+            }
         }
     },
     //subcategories for mobility disadvantages

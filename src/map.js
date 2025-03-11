@@ -233,101 +233,86 @@ function changeMap() {
             else if (selected_values["v1"] == "bike_sharing" ) {//Carlos
                 propertyName_env="Bike sharing";
             }
+            else if (selected_values["v1"] == "m_slope" ) {//Carlos
+                propertyName_env="Mean slope";
+            }
 
         //mobility disadvantages
         case "ji_v_sg":
             var propertyName;
             var propertyName_ji;
-            if ( selected_values["v1"] == "tp" ) {//CYRINE
-                propertyName="Population [nb]";
+            if ( selected_values["v1"] == "tp" ) {//Carlos
+                propertyName="Total Population";
 
             }
-            else if (selected_values["v1"] == "o60" ) {//CYRINE
-                propertyName="Older people [%]";
+            else if (selected_values["v1"] == "w" ) {//Carlos
+                propertyName="Women";
             }
-            else if ( selected_values["v1"] == "un" ) {//CYRINE
-                propertyName=" Unemployed [%]";
-            }
-            else if ( selected_values["v1"] == "income" ) {//CYRINE
-                propertyName="Poverty rate [%]";
-            }
-            else if ( selected_values["v1"] == "u9" ) {//CYRINE
-                propertyName="Children [%]";
-            }
-            else if ( selected_values["v1"] == "u19" ) {//CYRINE
-                propertyName="Teenagers [%]";
-            }
-            else if ( selected_values["v1"] == "nc" ) {//CYRINE
-                propertyName=" Population with no access to car [%]";
-            }
-            else if ( selected_values["v1"] == "imm" ) {//CYRINE
-                propertyName="Intrant migrant between 2009 et 2014 [%]";
-            }
-            if (  selected_values["amenity"] == "h" ) {//CYRINE
-                propertyName_ji="1Km proximity to Health [% population] ";
-            }
-            else if (  selected_values["amenity"] == "s" ) {//CYRINE
-                propertyName_ji="1Km proximity to Sport [% population] ";
+            else if ( selected_values["v1"] == "o60" ) {//Carlos
+                propertyName="Older people";
 
             }
-            else if ( selected_values["amenity"] == "f" ) {//CYRINE
-                propertyName_ji="1Km proximity to Food [% area]";
+            else if ( selected_values["v1"] == "u10" ) {//Carlos
+                propertyName="Children";
             }
-            else if (selected_values["amenity"] == "a" ) {//CYRINE
-                propertyName_ji="1Km proximity to Administration [% area]";
-
+            else if ( selected_values["v1"] == "u20" ) {//Carlos
+                propertyName="Teenagers";
             }
-            else if (  selected_values["amenity"] == "e1" ) {//CYRINE
-                propertyName_ji="1Km proximity to school [% population] ";
-
-
+            else if ( selected_values["v1"] == "vic" ) {//Carlos
+                propertyName="Victim Population";
             }
-            else if ( selected_values["amenity"] == "e2" ) {//CYRINE
-                propertyName_ji="1Km proximity to elementary or highschool [% population] ";
-
-            }
-            else if ( selected_values["amenity"] == "g" ) {//CYRINE
-                propertyName_ji="1Km proximity to Green space [% area]";
+            else if ( selected_values["v1"] == "ses" ) {//Carlos
+                propertyName = "SES 1 and 2";
             }
 
-            else if (  selected_values["amenity"] == "accidents" ) {//CYRINE
-                propertyName_ji="Accidents [Nb/ha]";
+
+            if (  selected_values["mot"] == "fatalities" ) {//Carlos
+                propertyName_ji="Accidents (fatalities)";
+            }
+            else if (  selected_values["mot"] == "injuries" ) {//Carlos
+                propertyName_ji="Accidents (injuries)";
 
             }
-            else if (   selected_values["amenity"] == "acc_pt" ) {//CYRINE
-                propertyName_ji="700m proximity to PT [% area]";
+            else if ( selected_values["mot"] == "acc_ped" ) {//Carlos
+                propertyName_ji="Accidents (pedestrians)";
             }
-            else if ( selected_values["amenity"] == "intersection_density" ) {//CYRINE
-                propertyName_ji="Intersection [nb /ha]";
+            else if (selected_values["mot"] == "acc_car" ) {//Carlos
+                propertyName_ji="Accidents (cars)";
+
             }
-            else if (  selected_values["amenity"] == "road_density" ) {//CYRINE
-                propertyName_ji="Road density [km/ha]";
+            else if (  selected_values["mot"] == "acc_bike" ) {//Carlos
+                propertyName_ji="Accidents (bicycles)";
+
+            }
+            else if ( selected_values["mot"] == "acc_moto" ) {//Carlos
+                propertyName_ji="Accidents (motorcycles)";
+
+            }
+            else if ( selected_values["mot"] == "car_use" ) {//Carlos
+                propertyName_ji="Car use";
             }
 
-            else if (  selected_values["amenity"] == "pt_frequ" ) {//CYRINE
-                propertyName_ji="Frequency PT [min]";
+            else if (  selected_values["mot"] == "pt_use" ) {//Carlos
+                propertyName_ji="Use of PT";
+
+            }
+            else if (  selected_values["mot"] == "bicycle_use" ) {//Carlos
+                propertyName_ji="Bicycle Use";
+            }
+            else if ( selected_values["mot"] == "moto_use" ) {//Carlos
+                propertyName_ji="Motorcycle use";
+            }
+            else if (  selected_values["mot"] == "walk_use" ) {//Carlos
+                propertyName_ji="Walking";
             }
 
-            else if ( selected_values["amenity"] == "dur_15" ) {//CYRINE
-                propertyName_ji="Commuting for <15 min [% active pop]";
+            else if (  selected_values["mot"] == "time" ) {//Carlos
+                propertyName_ji="Commuting time";
             }
-            else if ( selected_values["amenity"] == "dur_15_30" ) {//CYRINE
-                propertyName_ji="Commuting for 15-30 min [% active pop]";
-            }
-            else if (   selected_values["amenity"] == "dur_30" ) {//CYRINE
-                propertyName_ji="Commuting for >30 min [% active pop]";
+            else if ( selected_values["mot"] == "pollution" ) {//Carlos
+                propertyName_ji="Pollution PM2.5";
             }
 
-            else if ( selected_values["amenity"] == "pt_usage" ) {//CYRINE
-                propertyName_ji="PT for commuting [%active  pop]"}
-            else if ( selected_values["amenity"] == "irr_pt_usage" ) {//CYRINE
-                propertyName_ji="Irregular transport for commuting [%active  pop]"}
-
-            else if ( selected_values["amenity"] == "walk_usage" ) {//CYRINE
-                propertyName_ji="Walking for commuting [%active  pop]"}
-
-            else if ( selected_values["amenity"] == "car_usage" ) {//CYRINE
-                propertyName_ji="Car for commuting [%active  pop]"}
             if (propertyName_ji && propertyName) {
 
                 if (bi_geojson == null || bi_geojson === 'undefined') {
@@ -341,7 +326,183 @@ function changeMap() {
                     handleJsonBiv(selectFeaturesWithTwoProperties(bi_geojson, propertyName, propertyName_ji))
                 }
             }
-         break;
+        break;
+        //spatial disadvantages
+        case "spat":
+            var propertyName;
+            var propertyName_env;
+            if ( selected_values["v1"] == "tp" ) {//Carlos
+                propertyName="Total Population";
+
+            }
+            else if (selected_values["v1"] == "w" ) {//Carlos
+                propertyName="Women";
+            }
+            else if ( selected_values["v1"] == "o60" ) {//Carlos
+                propertyName="Older people";
+
+            }
+            else if ( selected_values["v1"] == "u10" ) {//Carlos
+                propertyName="Children";
+            }
+            else if ( selected_values["v1"] == "u20" ) {//Carlos
+                propertyName="Teenagers";
+            }
+            else if ( selected_values["v1"] == "vic" ) {//Carlos
+                propertyName="Victim Population";
+            }
+            else if ( selected_values["v1"] == "ses" ) {//Carlos
+                propertyName = "SES 1 and 2";
+            }
+
+            if (selected_values["amenity"] == "h" ) {//Carlos
+                propertyName_env="Health Services";
+            }
+            else if (selected_values["amenity"] == "e" ) {//Carlos
+                propertyName_env="Schools";
+            }
+            else if (selected_values["amenity"] == "g" ) {//Carlos
+                propertyName_env="Government Services";
+            }
+            else if (selected_values["amenity"] == "c" ) {//Carlos
+                propertyName_env="Cultural Activites";
+            }
+            else if (selected_values["amenity"] == "ugs" ) {//Carlos
+                propertyName_env="UGS";
+            }
+            else if (selected_values["mot"] == "cycleway_density" ) {//Carlos
+                propertyName_env="Cycle paths";
+            }
+            else if (selected_values["mot"] == "street_density" ) {//Carlos
+                propertyName_env="Streets";
+            }
+            else if (selected_values["mot"] == "walk_inf" ) {//Carlos
+                propertyName_env="Sidewalks";
+            }
+            else if (selected_values["mot"] == "PT_stops" ) {//Carlos
+                propertyName_env="PT Stations";
+            }
+            else if (selected_values["mot"] == "bike_sharing" ) {//Carlos
+                propertyName_env="Bike sharing";
+            }
+            else if (selected_values["mot"] == "m_slope" ) {//Carlos
+                propertyName_env="Mean slope";
+            }
+
+            if (propertyName_env && propertyName) {
+
+                if (bi_geojson == null || bi_geojson === 'undefined') {
+                    mergeGeoJSONandCSV2(jsonFilePath_map, csvFilePathji,csvFilePathsg)
+                        .then(mergedGeoJSON => {
+                            // Do something with the merged GeoJSON
+                            bi_geojson = mergedGeoJSON;
+                            handleJsonBiv(selectFeaturesWithTwoProperties(bi_geojson, propertyName,propertyName_env ))
+                        });
+                } else {
+                    handleJsonBiv(selectFeaturesWithTwoProperties(bi_geojson, propertyName, propertyName_env))
+                }
+            }
+        break;
+        //accessibility disadvantages
+        case "access":
+            var propertyName_ji;
+            var propertyName_env;
+            if (selected_values["v1"] == "h" ) {//Carlos
+                propertyName_env="Health Services";
+            }
+            else if (selected_values["v1"] == "e" ) {//Carlos
+                propertyName_env="Schools";
+            }
+            else if (selected_values["v1"] == "g" ) {//Carlos
+                propertyName_env="Government Services";
+            }
+            else if (selected_values["v1"] == "c" ) {//Carlos
+                propertyName_env="Cultural Activites";
+            }
+            else if (selected_values["v1"] == "ugs" ) {//Carlos
+                propertyName_env="UGS";
+            }
+            else if (selected_values["v1"] == "cycleway_density" ) {//Carlos
+                propertyName_env="Cycle paths";
+            }
+            else if (selected_values["v1"] == "street_density" ) {//Carlos
+                propertyName_env="Streets";
+            }
+            else if (selected_values["v1"] == "walk_inf" ) {//Carlos
+                propertyName_env="Sidewalks";
+            }
+            else if (selected_values["v1"] == "PT_stops" ) {//Carlos
+                propertyName_env="PT Stations";
+            }
+            else if (selected_values["v1"] == "bike_sharing" ) {//Carlos
+                propertyName_env="Bike sharing";
+            }
+            else if (selected_values["v1"] == "m_slope" ) {//Carlos
+                propertyName_env = "Mean slope";
+            }
+
+            if (  selected_values["mot"] == "fatalities" ) {//Carlos
+                propertyName_ji="Accidents (fatalities)";
+            }
+            else if (  selected_values["mot"] == "injuries" ) {//Carlos
+                propertyName_ji="Accidents (injuries)";
+
+            }
+            else if ( selected_values["mot"] == "acc_ped" ) {//Carlos
+                propertyName_ji="Accidents (pedestrians)";
+            }
+            else if (selected_values["mot"] == "acc_car" ) {//Carlos
+                propertyName_ji="Accidents (cars)";
+
+            }
+            else if (  selected_values["mot"] == "acc_bike" ) {//Carlos
+                propertyName_ji="Accidents (bicycles)";
+
+            }
+            else if ( selected_values["mot"] == "acc_moto" ) {//Carlos
+                propertyName_ji="Accidents (motorcycles)";
+
+            }
+            else if ( selected_values["mot"] == "car_use" ) {//Carlos
+                propertyName_ji="Car use";
+            }
+
+            else if (  selected_values["mot"] == "pt_use" ) {//Carlos
+                propertyName_ji="Use of PT";
+
+            }
+            else if (  selected_values["mot"] == "bicycle_use" ) {//Carlos
+                propertyName_ji="Bicycle Use";
+            }
+            else if ( selected_values["mot"] == "moto_use" ) {//Carlos
+                propertyName_ji="Motorcycle use";
+            }
+            else if (  selected_values["mot"] == "walk_use" ) {//Carlos
+                propertyName_ji="Walking";
+            }
+
+            else if (  selected_values["mot"] == "time" ) {//Carlos
+                propertyName_ji="Commuting time";
+            }
+            else if ( selected_values["mot"] == "pollution" ) {//Carlos
+                propertyName_ji="Pollution PM2.5";
+            }
+            if (propertyName_env && propertyName_ji) {
+
+                if (bi_geojson == null || bi_geojson === 'undefined') {
+                    mergeGeoJSONandCSV2(jsonFilePath_map, csvFilePathji,csvFilePathsg)
+                        .then(mergedGeoJSON => {
+                            // Do something with the merged GeoJSON
+                            bi_geojson = mergedGeoJSON;
+                            handleJsonBiv(selectFeaturesWithTwoProperties(bi_geojson, propertyName_ji,propertyName_env ))
+                        });
+                } else {
+                    handleJsonBiv(selectFeaturesWithTwoProperties(bi_geojson, propertyName_ji, propertyName_env))
+                }
+            }
+            break;
+
+        //UTAM Summary
         case "summ":{
             if(radar_geojson == null || radar_geojson === 'undefined'){
                 mergeGeoJSONandCSV(jsonFilePath_map, csvradar)
