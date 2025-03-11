@@ -22,9 +22,9 @@ function handleJsonSeq(data,name) {
     var quants = getQuants(data,"Value");
     
     // Generate style from quantiles
-    if (selected_values['justice']=="acc"|selected_values['justice']=="ava"){ function getColor(d) {
+    if (selected_values['justice']=="amenities"|selected_values['justice']=="ava"){ function getColor(d) {
         return  d > quants["Q3"] ? '#fef0d9' :
-            d > quants["Q2"] ?  '#fdcc8a' :
+                d > quants["Q2"] ? '#fdcc8a' :
                 d > quants["Q1"] ? '#fc8d59' :
                     '#d7301f'  ;
     }
@@ -49,7 +49,7 @@ function handleJsonSeq(data,name) {
     }
     // legend
     let grades = [quants["Q0"], quants["Q1"], quants["Q2"], quants["Q3"], quants["Q4"]];
-    var legend_text = '<h4> <span i18n="' + (selected_values["map_type"] == "sg" ? selected_values["justice"] : (selected_values["justice"] == "acc" ?  selected_values["amenity"]:selected_values["v1"])) + '"></span> [<span i18n="' + unit + '"></span>]'+  '</h4>';
+    var legend_text = '<h4> <span i18n="' + (selected_values["map_type"] == "sg" ? selected_values["justice"] : (selected_values["justice"] == "amenities" ?  selected_values["amenity"]:selected_values["v1"])) + '"></span> [<span i18n="' + unit + '"></span>]'+  '</h4>';
 
    // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < grades.length - 1; i++) {

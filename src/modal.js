@@ -169,7 +169,7 @@ function displayModal(welcomeOrAboutUs) {
         // About
         content.innerHTML = '<p i18n="about_us"></p>'
             + '<p i18n="data_source"></p>' +
-            '<div class="custom-bullets"> <p class="bullet" >  <span i18n="source1"></span><a href="https://bogota-laburbano.opendatasoft.com/explore/dataset/poblacion-upz-bogota/table/" i18n="ok"></a></p>  <p class="bullet" >  <span i18n="source2"></span><a href="https://experience.arcgis.com/template/141b974f29a948ce8386ebf9f135a455/page/Viajes-Origen---Destino/?draft=true&views=ACB-2022%2CTotal-2022" i18n="ok"></a></p>  <p class="bullet" >  <span i18n="source3"></span><a href="https://observatorio.movilidadbogota.gov.co/encuesta/encuesta-de-movilidad-2023" i18n="ok"></a></p> <p class="bullet" >  <span i18n="source4"></span><a href="https://mapas.bogota.gov.co" i18n="ok"></a></p>
+            '<div class="custom-bullets"> <p class="bullet" >  <span i18n="source1"></span><a href="https://bogota-laburbano.opendatasoft.com/explore/dataset/poblacion-upz-bogota/table/" i18n="ok"></a></p>  <p class="bullet" >  <span i18n="source2"></span><a href="https://experience.arcgis.com/template/141b974f29a948ce8386ebf9f135a455/page/Viajes-Origen---Destino/?draft=true&views=ACB-2022%2CTotal-2022" i18n="ok"></a></p>  <p class="bullet" >  <span i18n="source3"></span><a href="https://observatorio.movilidadbogota.gov.co/encuesta/encuesta-de-movilidad-2023" i18n="ok"></a></p> <p class="bullet" >  <span i18n="source4"></span><a href="https://mapas.bogota.gov.co" i18n="ok"></a></p>'
 
 
         translatePage();
