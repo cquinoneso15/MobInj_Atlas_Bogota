@@ -1,7 +1,8 @@
 
-const jsonFilePath_map = './data/map_delegation.geojson';
+const jsonFilePath_map = './data/map_UTAMs.geojson';
 const csvFilePathsg = './data/Social_disadvantage.csv';
-const csvFilePathji = './data/geojson_transport_disa.csv';
+const csvFilePathji = './data/Transport_disadvantage.csv';
+const csvFilePathenv = './data/Environmental_disadvantage.csv';
 const csvradar = './data/Radar.csv';
 
 async function mergeGeoJSONandCSV(geojsonPath, csvPath) {
@@ -12,17 +13,17 @@ async function mergeGeoJSONandCSV(geojsonPath, csvPath) {
     // Load and parse the CSV file
     const csvResponse = await fetch(csvPath);
     const csvText = await csvResponse.text();
-    const csvData = Papa.parse(csvText, { header: true }).data;
+    const csvData = Papa.parse(csvText, { header: true, delimiter: ";" }).data;
 
     // Create a lookup from the CSV data
     const csvLookup = {};
     csvData.forEach(row => {
-        csvLookup[row.ref_tn_cod] = row;
+        csvLookup[row.cod_upz] = row;
     });
 
     // Merge the CSV data into the GeoJSON features
     geojson.features.forEach(feature => {
-        const refTnCod = feature.properties.ref_tn_cod;
+        const refTnCod = feature.properties.cod_upz;
         if (csvLookup[refTnCod]) {
             // Convert numeric properties to float
             const floatProperties = convertNumericPropertiesToFloat(csvLookup[refTnCod]);
@@ -40,24 +41,24 @@ async function mergeGeoJSONandCSV2(geojsonPath, csvPath,csvPath2) {
     // Load and parse the CSV file
     const csvResponse = await fetch(csvPath);
     const csvText = await csvResponse.text();
-    const csvData = Papa.parse(csvText, { header: true }).data;
+    const csvData = Papa.parse(csvText, { header: true, delimiter: ";" }).data;
     const csvResponse2 = await fetch(csvPath2);
     const csvText2 = await csvResponse2.text();
-    const csvData2 = Papa.parse(csvText2, { header: true }).data;
+    const csvData2 = Papa.parse(csvText2, { header: true, delimiter: ";" }).data;
 
     // Create a lookup from the CSV data
     const csvLookup = {};
     csvData.forEach(row => {
-        csvLookup[row.ref_tn_cod] = row;
+        csvLookup[row.cod_upz] = row;
     });
     const csvLookup2 = {};
     csvData2.forEach(row => {
-        csvLookup2[row.ref_tn_cod] = row;
+        csvLookup2[row.cod_upz] = row;
     });
 
     // Merge the CSV data into the GeoJSON features
     geojson.features.forEach(feature => {
-        const refTnCod = feature.properties.ref_tn_cod;
+        const refTnCod = feature.properties.cod_upz;
         if (csvLookup[refTnCod]) {
             // Convert numeric properties to float
             const floatProperties = convertNumericPropertiesToFloat(csvLookup[refTnCod]);
@@ -65,7 +66,7 @@ async function mergeGeoJSONandCSV2(geojsonPath, csvPath,csvPath2) {
         }
     })
     geojson.features.forEach(feature => {
-        const refTnCod = feature.properties.ref_tn_cod;
+        const refTnCod = feature.properties.cod_upz;
         if (csvLookup2[refTnCod]) {
             // Convert numeric properties to float
             const floatProperties = convertNumericPropertiesToFloat(csvLookup2[refTnCod]);
@@ -79,7 +80,11 @@ async function mergeGeoJSONandCSV2(geojsonPath, csvPath,csvPath2) {
 function convertNumericPropertiesToFloat(properties) {
     const floatProperties = {};
     for (const key in properties) {
-        floatProperties[key] = isNumeric(properties[key]) ? parseFloat(properties[key]) : properties[key];
+        if (isNumeric(properties[key])) {
+            floatProperties[key] = parseFloat(properties[key].replace(",", "."));
+        } else {
+            floatProperties[key] = properties[key];
+        }
     }
     return floatProperties;
 }
