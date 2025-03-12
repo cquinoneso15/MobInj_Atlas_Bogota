@@ -255,75 +255,75 @@ function changeMap() {
             var propertyName;
             var propertyName_ji;
             if ( selected_values["v1"] == "tp" ) {//Carlos
-                propertyName="Total Population";
+                propertyName="Total Population [people]";
 
             }
             else if (selected_values["v1"] == "w" ) {//Carlos
-                propertyName="Women";
+                propertyName="Women [%]";
             }
             else if ( selected_values["v1"] == "o60" ) {//Carlos
-                propertyName="Older people";
+                propertyName="Older people [%]";
 
             }
             else if ( selected_values["v1"] == "u10" ) {//Carlos
-                propertyName="Children";
+                propertyName="Children [%]";
             }
             else if ( selected_values["v1"] == "u20" ) {//Carlos
-                propertyName="Teenagers";
+                propertyName="Teenagers [%]";
             }
             else if ( selected_values["v1"] == "vic" ) {//Carlos
-                propertyName="Victim Population";
+                propertyName="Victim Population [%]";
             }
             else if ( selected_values["v1"] == "ses" ) {//Carlos
-                propertyName = "SES 1 and 2";
+                propertyName = "SES 1 and 2 [% built-up area]";
             }
 
 
             if (  selected_values["mot"] == "fatalities" ) {//Carlos
-                propertyName_ji="Accidents (fatalities)";
+                propertyName_ji="Accidents (fatalities) [1/ha]";
             }
             else if (  selected_values["mot"] == "injuries" ) {//Carlos
-                propertyName_ji="Accidents (injuries)";
+                propertyName_ji="Accidents (injuries) [1/ha]";
 
             }
             else if ( selected_values["mot"] == "acc_ped" ) {//Carlos
-                propertyName_ji="Accidents (pedestrians)";
+                propertyName_ji="Accidents (pedestrians) [1/ha]";
             }
             else if (selected_values["mot"] == "acc_car" ) {//Carlos
-                propertyName_ji="Accidents (cars)";
+                propertyName_ji="Accidents (cars) [1/ha]";
 
             }
             else if (  selected_values["mot"] == "acc_bike" ) {//Carlos
-                propertyName_ji="Accidents (bicycles)";
+                propertyName_ji="Accidents (bicycles) [1/ha]";
 
             }
             else if ( selected_values["mot"] == "acc_moto" ) {//Carlos
-                propertyName_ji="Accidents (motorcycles)";
+                propertyName_ji="Accidents (motorcycles) [1/ha]";
 
             }
             else if ( selected_values["mot"] == "car_use" ) {//Carlos
-                propertyName_ji="Car use";
+                propertyName_ji="Car use [%]";
             }
 
             else if (  selected_values["mot"] == "pt_use" ) {//Carlos
-                propertyName_ji="Use of PT";
+                propertyName_ji="Use of PT [%]";
 
             }
             else if (  selected_values["mot"] == "bicycle_use" ) {//Carlos
-                propertyName_ji="Bicycle Use";
+                propertyName_ji="Bicycle Use [%]";
             }
             else if ( selected_values["mot"] == "moto_use" ) {//Carlos
-                propertyName_ji="Motorcycle use";
+                propertyName_ji="Motorcycle use [%]";
             }
             else if (  selected_values["mot"] == "walk_use" ) {//Carlos
-                propertyName_ji="Walking";
+                propertyName_ji="Walking [%]";
             }
 
             else if (  selected_values["mot"] == "time" ) {//Carlos
-                propertyName_ji="Commuting time";
+                propertyName_ji="Commuting time [min]";
             }
             else if ( selected_values["mot"] == "pollution" ) {//Carlos
-                propertyName_ji="Pollution PM2.5";
+                propertyName_ji="Pollution [PM2.5]";
             }
 
             if (propertyName_ji && propertyName) {
@@ -345,61 +345,61 @@ function changeMap() {
             var propertyName;
             var propertyName_env;
             if ( selected_values["v1"] == "tp" ) {//Carlos
-                propertyName="Total Population";
+                propertyName="Total Population [people]";
 
             }
             else if (selected_values["v1"] == "w" ) {//Carlos
-                propertyName="Women";
+                propertyName="Women [%]";
             }
             else if ( selected_values["v1"] == "o60" ) {//Carlos
-                propertyName="Older people";
+                propertyName="Older people [%]";
 
             }
             else if ( selected_values["v1"] == "u10" ) {//Carlos
-                propertyName="Children";
+                propertyName="Children [%]";
             }
             else if ( selected_values["v1"] == "u20" ) {//Carlos
-                propertyName="Teenagers";
+                propertyName="Teenagers [%]";
             }
             else if ( selected_values["v1"] == "vic" ) {//Carlos
-                propertyName="Victim Population";
+                propertyName="Victim Population [%]";
             }
             else if ( selected_values["v1"] == "ses" ) {//Carlos
-                propertyName = "SES 1 and 2";
+                propertyName = "SES 1 and 2 [% built-up area]";
             }
 
             if (selected_values["amenity"] == "h" ) {//Carlos
-                propertyName_env="Health Services";
+                propertyName_env="Health Services [1/ha]";
             }
             else if (selected_values["amenity"] == "e" ) {//Carlos
-                propertyName_env="Schools";
+                propertyName_env="Schools [1/ha]";
             }
             else if (selected_values["amenity"] == "g" ) {//Carlos
-                propertyName_env="Government Services";
+                propertyName_env="Government Services [1/ha]";
             }
             else if (selected_values["amenity"] == "c" ) {//Carlos
-                propertyName_env="Cultural Activites";
+                propertyName_env="Cultural Activites [1/ha]";
             }
             else if (selected_values["amenity"] == "ugs" ) {//Carlos
-                propertyName_env="UGS";
+                propertyName_env="UGS [% area]";
             }
             else if (selected_values["mot"] == "cycleway_density" ) {//Carlos
-                propertyName_env="Cycle paths";
+                propertyName_env="Cycle paths [% area]";
             }
             else if (selected_values["mot"] == "street_density" ) {//Carlos
-                propertyName_env="Streets";
+                propertyName_env="Streets [% area]";
             }
             else if (selected_values["mot"] == "walk_inf" ) {//Carlos
-                propertyName_env="Sidewalks";
+                propertyName_env="Sidewalks [% area]";
             }
             else if (selected_values["mot"] == "PT_stops" ) {//Carlos
-                propertyName_env="PT Stations";
+                propertyName_env="PT Stations [1/ha]";
             }
             else if (selected_values["mot"] == "bike_sharing" ) {//Carlos
-                propertyName_env="Bike sharing";
+                propertyName_env="Bike sharing [1/ha]";
             }
             else if (selected_values["mot"] == "m_slope" ) {//Carlos
-                propertyName_env="Mean slope";
+                propertyName_env="Mean slope [%]";
             }
 
             if (propertyName_env && propertyName) {
@@ -421,84 +421,84 @@ function changeMap() {
             var propertyName_ji;
             var propertyName_env;
             if (selected_values["v1"] == "h" ) {//Carlos
-                propertyName_env="Health Services";
+                propertyName_env="Health Services [1/ha]";
             }
             else if (selected_values["v1"] == "e" ) {//Carlos
-                propertyName_env="Schools";
+                propertyName_env="Schools [1/ha]";
             }
             else if (selected_values["v1"] == "g" ) {//Carlos
-                propertyName_env="Government Services";
+                propertyName_env="Government Services [1/ha]";
             }
             else if (selected_values["v1"] == "c" ) {//Carlos
-                propertyName_env="Cultural Activites";
+                propertyName_env="Cultural Activites [1/ha]";
             }
             else if (selected_values["v1"] == "ugs" ) {//Carlos
-                propertyName_env="UGS";
+                propertyName_env="UGS [% area]";
             }
             else if (selected_values["v1"] == "cycleway_density" ) {//Carlos
-                propertyName_env="Cycle paths";
+                propertyName_env="Cycle paths [% area]";
             }
             else if (selected_values["v1"] == "street_density" ) {//Carlos
-                propertyName_env="Streets";
+                propertyName_env="Streets [% area]";
             }
             else if (selected_values["v1"] == "walk_inf" ) {//Carlos
-                propertyName_env="Sidewalks";
+                propertyName_env="Sidewalks [% area]";
             }
             else if (selected_values["v1"] == "PT_stops" ) {//Carlos
-                propertyName_env="PT Stations";
+                propertyName_env="PT Stations [1/ha]";
             }
             else if (selected_values["v1"] == "bike_sharing" ) {//Carlos
-                propertyName_env="Bike sharing";
+                propertyName_env="Bike sharing [1/ha]";
             }
             else if (selected_values["v1"] == "m_slope" ) {//Carlos
-                propertyName_env = "Mean slope";
+                propertyName_env = "Mean slope [%]";
             }
 
             if (  selected_values["mot"] == "fatalities" ) {//Carlos
-                propertyName_ji="Accidents (fatalities)";
+                propertyName_ji="Accidents (fatalities) [1/ha]";
             }
             else if (  selected_values["mot"] == "injuries" ) {//Carlos
-                propertyName_ji="Accidents (injuries)";
+                propertyName_ji="Accidents (injuries) [1/ha]";
 
             }
             else if ( selected_values["mot"] == "acc_ped" ) {//Carlos
-                propertyName_ji="Accidents (pedestrians)";
+                propertyName_ji="Accidents (pedestrians) [1/ha]";
             }
             else if (selected_values["mot"] == "acc_car" ) {//Carlos
-                propertyName_ji="Accidents (cars)";
+                propertyName_ji="Accidents (cars) [1/ha]";
 
             }
             else if (  selected_values["mot"] == "acc_bike" ) {//Carlos
-                propertyName_ji="Accidents (bicycles)";
+                propertyName_ji="Accidents (bicycles) [1/ha]";
 
             }
             else if ( selected_values["mot"] == "acc_moto" ) {//Carlos
-                propertyName_ji="Accidents (motorcycles)";
+                propertyName_ji="Accidents (motorcycles) [1/ha]";
 
             }
             else if ( selected_values["mot"] == "car_use" ) {//Carlos
-                propertyName_ji="Car use";
+                propertyName_ji="Car use [%]";
             }
 
             else if (  selected_values["mot"] == "pt_use" ) {//Carlos
-                propertyName_ji="Use of PT";
+                propertyName_ji="Use of PT [%]";
 
             }
             else if (  selected_values["mot"] == "bicycle_use" ) {//Carlos
-                propertyName_ji="Bicycle Use";
+                propertyName_ji="Bicycle Use [%]";
             }
             else if ( selected_values["mot"] == "moto_use" ) {//Carlos
-                propertyName_ji="Motorcycle use";
+                propertyName_ji="Motorcycle use [%]";
             }
             else if (  selected_values["mot"] == "walk_use" ) {//Carlos
-                propertyName_ji="Walking";
+                propertyName_ji="Walking [%]";
             }
 
             else if (  selected_values["mot"] == "time" ) {//Carlos
-                propertyName_ji="Commuting time";
+                propertyName_ji="Commuting time [min]";
             }
             else if ( selected_values["mot"] == "pollution" ) {//Carlos
-                propertyName_ji="Pollution PM2.5";
+                propertyName_ji="Pollution [PM2.5]";
             }
             if (propertyName_env && propertyName_ji) {
 
