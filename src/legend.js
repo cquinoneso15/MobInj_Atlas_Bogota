@@ -26,7 +26,6 @@ function generateLegend(info, replace) {
             } else {
                 div.innerHTML = '<input type="checkbox">'
                     + '<div class="legend-title-text" i18n="legend"></div>'
-                    + '<div class="legend-comment" i18n="explain"></div>'
                     + '<div class="arrow"></div>'
                     + '<div class="legend-content"></div>';
 
