@@ -1,4 +1,4 @@
-﻿cod_upz;nom_upz;Accidents (cars);Accidents (pedestrians);Accidents (motorcycles);Accidents (bicycles);Accidents (fatalities);Accidents (injuries);Pollution PM2.5;Car use;Use of PT;Bicycle Use;Walking;Motorcycle use;Commuting time
+﻿cod_upz;nom_upz;Accidents (cars) [1/ha];Accidents (pedestrians) [1/ha];Accidents (motorcycles) [1/ha];Accidents (bicycles) [1/ha];Accidents (fatalities) [1/ha];Accidents (injuries) [1/ha];Pollution [PM2.5];Car use [%];Use of PT [%];Bicycle Use [%];Walking [%];Motorcycle use [%];Commuting time [min]
 1;PASEO DE LOS LIBERTADORES;0.676418899;0.153300545;0.347691958;0.112209677;0.052153794;1.237467285;14.520332;18.80952381;26.42857143;10.95238095;30.23809524;5.238095238;49.42380952
 2;LA ACADEMIA;0.136661079;0.053792127;0.085776635;0.027622984;0.017446095;0.28640673;15.738592;37.10691824;17.61006289;8.176100629;8.805031447;6.289308176;52.49056604
 3;GUAYMARAL;0.11020822;0.014694429;0.05510411;0.018368037;0.014694429;0.183680367;14.520332;65.93406593;3.296703297;12.08791209;2.197802198;9.89010989;52.8021978
