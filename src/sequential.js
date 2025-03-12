@@ -22,7 +22,7 @@ function handleJsonSeq(data,name) {
     var quants = getQuants(data,"Value");
     
     // Generate style from quantiles
-    if (selected_values['justice']=="amenities"|selected_values['justice']=="ava"){ function getColor(d) {
+    if (selected_values['justice']=="amenities"|selected_values['justice']=="ava"|selected_values['justice']=="stations"){ function getColor(d) {
         return  d > quants["Q3"] ? '#fef0d9' :
                 d > quants["Q2"] ? '#fdcc8a' :
                 d > quants["Q1"] ? '#fc8d59' :
