@@ -57,7 +57,7 @@ info.update = function (props) {
         if (X == "income") X = "inc";
 
         this._div.innerHTML += (props
-            ? '<b>' + props.Delegation + '</b><br /><span i18n="' + selected_values["amenity"] + '"></span> ' + props['Mob'].toFixed(2)  +' ('+ props['Unit_mobil'] +')'+'&nbsp;<br /><span i18n="' + selected_values["v1"] + '"></span> ' + props.Social.toFixed(2) +' ('+ props['Unit_social'] +')</span> '
+            ? '<b>' + props.Delegation + '</b><br /><span i18n="' + selected_values["mot"] + '"></span> ' + props['Mob'].toFixed(2)  +' ('+ props['Unit_mobil'] +')'+'&nbsp;<br /><span i18n="' + selected_values["v1"] + '"></span> ' + props.Social.toFixed(2) +' ('+ props['Unit_social'] +')</span> '
             : '');
     } else {
         this._div.innerHTML += (props

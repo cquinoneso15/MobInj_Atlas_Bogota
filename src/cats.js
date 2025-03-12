@@ -683,7 +683,7 @@ var selector_values_after_sp_1 = {
                     }
                 ]
             },
-            "amenity":{
+            "mot":{
                 "title": "amenities",
                 "values": [
                     {
