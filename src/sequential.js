@@ -49,7 +49,7 @@ function handleJsonSeq(data,name) {
     }
     // legend
     let grades = [quants["Q0"], quants["Q1"], quants["Q2"], quants["Q3"], quants["Q4"]];
-    var legend_text = '<h4> <span i18n="' + (selected_values["map_type"] == "sg" ? selected_values["justice"] : (selected_values["justice"] == "amenities" ?  selected_values["amenity"]:selected_values["v1"])) + '"></span> [<span i18n="' + unit + '"></span>]'+  '</h4>';
+    var legend_text = '<h4> <span i18n="' + (selected_values["map_type"] == "sg" ? selected_values["justice"] : selected_values["v1"]) + '"></span> [<span i18n="' + unit + '"></span>]'+  '</h4>';
 
    // loop through our density intervals and generate a label with a colored square for each interval
     for (var i = 0; i < grades.length - 1; i++) {
