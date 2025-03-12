@@ -1,4 +1,4 @@
-﻿cod_upz;nom_upz;UGS [% area];Schools [1/ha];Health Services [1/ha];Government Services [1/ha];Cultural Activites [1/ha];PT Stations [1/ha];Sidewalks [% area];Cycle paths [% area];Streets [% area];Mean slope [%] ;Bike sharing [1/ha]
+﻿cod_upz;nom_upz;UGS [% area];Schools [1/ha];Health Services [1/ha];Government Services [1/ha];Cultural Activites [1/ha];PT Stations [1/ha];Sidewalks [% area];Cycle paths [% area];Streets [% area];Mean slope [%];Bike sharing [1/ha]
 1;PASEO DE LOS LIBERTADORES;12.24758515;0.001580418;0.004741254;0;0;0.026867106;0.330061162;0.086176763;2.281531488;1.851598669;0
 2;LA ACADEMIA;3.22880375;0.040707555;0.002907683;0;0;0.033438349;0.130131558;0;2.087928858;1.24843814;0
 3;GUAYMARAL;4.338232321;0.003673607;0;0;0;0.007347215;0.191092017;0;2.624371666;1.025678692;0
