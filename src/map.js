@@ -368,19 +368,19 @@ function changeMap() {
                 propertyName = "SES 1 and 2 [% built-up area]";
             }
 
-            if (selected_values["amenity"] == "h" ) {//Carlos
+            if (selected_values["mot"] == "h" ) {//Carlos
                 propertyName_env="Health Services [1/ha]";
             }
-            else if (selected_values["amenity"] == "e" ) {//Carlos
+            else if (selected_values["mot"] == "e" ) {//Carlos
                 propertyName_env="Schools [1/ha]";
             }
-            else if (selected_values["amenity"] == "g" ) {//Carlos
+            else if (selected_values["mot"] == "g" ) {//Carlos
                 propertyName_env="Government Services [1/ha]";
             }
-            else if (selected_values["amenity"] == "c" ) {//Carlos
+            else if (selected_values["mot"] == "c" ) {//Carlos
                 propertyName_env="Cultural Activites [1/ha]";
             }
-            else if (selected_values["amenity"] == "ugs" ) {//Carlos
+            else if (selected_values["mot"] == "ugs" ) {//Carlos
                 propertyName_env="UGS [% area]";
             }
             else if (selected_values["mot"] == "cycleway_density" ) {//Carlos
