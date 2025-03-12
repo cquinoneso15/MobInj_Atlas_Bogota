@@ -73,7 +73,7 @@ function handleJsonBiv(data) {
     }
 
     // Add legend
-    if(selected_values["mot"]!='fatalities'|selected_values["mot"]!='injuries'|selected_values["mot"]!='acc_ped'|selected_values["mot"]!='acc_car'|selected_values["mot"]!='acc_bike'|selected_values["mot"]!='acc_moto'){
+    if(selected_values["amenity"]!='h'|selected_values["amenity"]!='e'|selected_values["amenity"]!='g'|selected_values["amenity"]!='c'|selected_values["amenity"]!='ugs'){
     generateLegend('<svg width="220" height="200" viewBox="-13 0 107 100" xmlns="http://www.w3.org/2000/svg">' +
         '<defs><marker id="arrow" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="4" markerHeight="4" orient="auto-start-reverse"><path d="M 0 0 L 10 5 L 0 10 z" /></marker></defs>' +
         '<g transform="translate(15 30) rotate(-45)">' +
@@ -84,7 +84,7 @@ function handleJsonBiv(data) {
         '<rect height="18" width="18" y="20" x="18" stroke="#000" fill="' + '#c85a5a' + '"/>' +
         '<path d="M0,0 v38" opacity="1" stroke-linecap="butt" stroke-linejoin="bevel" stroke="#000" stroke-width="2" fill="none"' + ((getCritical(biv_quart_X) == 'High') ? ' marker-start="url(#arrow)"' : ' marker-end="url(#arrow)"') + '/>' +
         '<path d="M0,38 h38" opacity="1" stroke-linecap="butt" stroke-linejoin="bevel" stroke="#000" stroke-width="2" fill="none"' + ((getCritical(biv_quart_pop) == 'Low') ? ' marker-start="url(#arrow)"' : ' marker-end="url(#arrow)"') + '/>' +
-        '<text font-weight="bold" font-size="0.4em" transform="translate(-10, 18) rotate(90)" text-anchor="middle" i18n="' + selected_values["mot"] + '"></text>' +
+        '<text font-weight="bold" font-size="0.4em" transform="translate(-10, 18) rotate(90)" text-anchor="middle" i18n="' + selected_values["amenity"] + '"></text>' +
         //'<text font-size="0.4em" transform="translate(-17, 18) rotate(90)" text-anchor="middle" i18n="' + data.features[0].properties["value_desc_" + X] + '"></text>' +
         '<text font-weight="bold" font-size="0.4em" transform="translate(18, 48)" text-anchor="middle" i18n="' + selected_values["v1"] + '"></text>' +
         //'<text font-size="0.4em" transform="translate(18, 55)" text-anchor="middle" i18n="' + data.features[0].properties["value_desc_pop"] + '"></text>' +
