@@ -507,10 +507,10 @@ function changeMap() {
                         .then(mergedGeoJSON => {
                             // Do something with the merged GeoJSON
                             access_geojson = mergedGeoJSON;
-                            handleJsonBiv(selectFeaturesWithTwoProperties(access_geojson, propertyName_ji,propertyName_env ))
+                            handleJsonBiv(selectFeaturesWithTwoProperties(access_geojson, propertyName_env,propertyName_ji ))
                         });
                 } else {
-                    handleJsonBiv(selectFeaturesWithTwoProperties(access_geojson, propertyName_ji, propertyName_env))
+                    handleJsonBiv(selectFeaturesWithTwoProperties(access_geojson, propertyName_env, propertyName_ji))
                 }
             }
             break;
