@@ -55,10 +55,17 @@ info.update = function (props) {
     if (biv) {
         var X = selected_values["justice"];
         if (X == "income") X = "inc";
-
-        this._div.innerHTML += (props
-            ? '<b>' + props.Delegation + '</b><br /><span i18n="' + selected_values["mot"] + '"></span> ' + props['Mob'].toFixed(2)  +' ('+ props['Unit_mobil'] +')'+'&nbsp;<br /><span i18n="' + selected_values["v1"] + '"></span> ' + props.Social.toFixed(2) +' ('+ props['Unit_social'] +')</span> '
-            : '');
+        var Y = selected_values["v1"];
+        var Z = selected_values["mot"];
+        if((Y == "h"|| Y == "e" || Y == "g" || Y == "c" || Y == "ugs" || Y == "cicleway_density" || Y == "street_density" || Y == "walk_inf" || Y == "PT_stops" || Y == "bike_sharing" || Y == "m_slope") && (Z == "fatalities" || Z == "injuries" || Z == "acc_ped" || Z == "acc_car" || Z == "acc_bike" || Z == "acc_moto" || Z == "car_use" || Z == "pt_use" || Z == "bicycle_use" || Z == "moto_use" || Z == "walk_use" || Z == "time" || Z == "pollution")) {
+            this._div.innerHTML += (props
+                ? '<b>' + props.Delegation + '</b><br /><span i18n="' + selected_values["v1"] + '"></span> ' + props['Mob'].toFixed(2)  +' ('+ props['Unit_mobil'] +')'+'&nbsp;<br /><span i18n="' + selected_values["mot"] + '"></span> ' + props.Social.toFixed(2) +' ('+ props['Unit_social'] +')</span> '
+                : '');
+        } else {
+            this._div.innerHTML += (props
+                ? '<b>' + props.Delegation + '</b><br /><span i18n="' + selected_values["mot"] + '"></span> ' + props['Mob'].toFixed(2) + ' (' + props['Unit_mobil'] + ')' + '&nbsp;<br /><span i18n="' + selected_values["v1"] + '"></span> ' + props.Social.toFixed(2) + ' (' + props['Unit_social'] + ')</span> '
+                : '');
+        }
     } else {
         this._div.innerHTML += (props
             ? '<b>' + props.Delegation + '</b><br />' + props.Value.toFixed(2)  +' ('+ props['Unit'] +')'+ '&nbsp;<span i18n="'  + '"></span>'
