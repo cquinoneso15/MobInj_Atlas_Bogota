@@ -124,6 +124,7 @@
     "street_density": "Street Density",
     "walk_inf": "Sidewalk Density",
     "PT_stops": "PT Stations",
+    "radar_PT": "Access to PT",
     "bike_sharing": "Bike Sharing Stations",
     "radar_bike_sharing": "Access to Bike Sharing",
 

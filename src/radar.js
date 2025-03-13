@@ -9,24 +9,33 @@
 var currentLayer;
 
 let labels_name = [
-  "radar_o60",
-  "radar_u9",
-  "radar_un",
-  "radar_imm",
-  "radar_pov",
   "radar_h",
-  "radar_e1",
+  "radar_p",
+  "radar_e",
   "radar_g",
-  "radar_a",
-  "radar_acc_pt",
-  "radar_intersection_density",
-  "radar_road_density",
-  "radar_accidents",
-  "radar_pt_usage",
-  "radar_irr_pt_usage",
-  "radar_dur30",
-  "radar_freq"
-
+  "radar_c",
+  "radar_ugs",
+  "radar_bike_sharing",
+  "radar_PT",
+  "radar_walk_use",
+  "car_use",
+  "bicycle_use",
+  "moto_use",
+  "pt_use",
+  "time",
+  "w",
+  "o60",
+  "u10",
+  "u20",
+  "vic",
+  "ses",
+  "m_slope",
+  "walk_inf",
+  "street_density",
+  "cycleway_density",
+  "fatalities",
+  "injuries",
+  "pollution"
 ]
 
 var radar;
@@ -53,7 +62,7 @@ function radarPlot(e) {
       }),
       datasets: [
         {
-          label: properties['alt_name_f'],
+          label: properties['nom_upz'],
           data: propertyNames.map(x =>  normalizeValue(properties[x], minMaxValues[x].min, minMaxValues[x].max)),
           fill: true,
           backgroundColor: 'rgba(255, 99, 132, 0.2)',
@@ -65,7 +74,7 @@ function radarPlot(e) {
           pointHoverBorderColor: 'rgb(255, 99, 132)'
         },
         {
-          label: translateString("avg_tunis"),
+          label: translateString("avg_bogota"),
           data: propertyNames.map(x => normalizeValue(averages[x], minMaxValues[x].min, minMaxValues[x].max)),
           fill: true,
           backgroundColor: 'rgba(150, 150, 150, 0.2)',
