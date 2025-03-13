@@ -10,9 +10,9 @@ var currentLayer;
 
 let labels_name = [
   "w",
-  "o60",
   "u10",
   "u20",
+  "o60",
   "vic",
   "ses",
   "m_slope",
