@@ -34,8 +34,7 @@ let labels_name = [
   "radar_c",
   "radar_ugs",
   "radar_PT",
-  "radar_bike_sharing",
-  ""
+  "radar_bike_sharing"
 ]
 
 var radar;
