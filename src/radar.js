@@ -104,10 +104,10 @@ function radarPlot(e) {
           pointLabels:{
             color: [
               ...Array(6).fill('#e41a1c'),
-              ...Array(8).fill('#377eb8'),
-              ...Array(6).fill('#4daf4a'),
-              ...Array(4).fill('#984ea3'),
-              ...Array(3).fill('#072140'),
+              ...Array(4).fill('#377eb8'),
+              ...Array(3).fill('#4daf4a'),
+              ...Array(6).fill('#984ea3'),
+              ...Array(7).fill('#072140'),
             ],
             font: {
               size: 9
