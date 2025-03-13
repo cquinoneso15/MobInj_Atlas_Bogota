@@ -9,6 +9,7 @@
 var currentLayer;
 
 let labels_name = [
+  "",
   "w",
   "u10",
   "u20",
