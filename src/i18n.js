@@ -51,7 +51,7 @@ i18next
     .use(i18nextHttpBackend)
     .use(i18nextBrowserLanguageDetector)
     .init({
-        supportedLngs: ["en", "es"],
+        supportedLngs: ["en", "es", "de"],
         fallbackLng: ["en"],
         debug: true,
         backend: {

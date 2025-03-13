@@ -9,6 +9,12 @@
 var currentLayer;
 
 let labels_name = [
+  "w",
+  "o60",
+  "u10",
+  "u20",
+  "vic",
+  "ses",
   "radar_h",
   "radar_p",
   "radar_e",
@@ -23,12 +29,6 @@ let labels_name = [
   "moto_use",
   "pt_use",
   "time",
-  "w",
-  "o60",
-  "u10",
-  "u20",
-  "vic",
-  "ses",
   "m_slope",
   "walk_inf",
   "street_density",
@@ -104,11 +104,11 @@ function radarPlot(e) {
           suggestedMax: 1,
           pointLabels:{
             color: [
-              ...Array(5).fill('#e41a1c'),
-              ...Array(3).fill('#377eb8'),
-              ...Array(4).fill('#4daf4a'),
-              ...Array(3).fill('#984ea3'),
-              ...Array(5).fill('#072140'),
+              ...Array(6).fill('#e41a1c'),
+              ...Array(8).fill('#377eb8'),
+              ...Array(6).fill('#4daf4a'),
+              ...Array(4).fill('#984ea3'),
+              ...Array(3).fill('#072140'),
             ],
             font: {
               size: 9
