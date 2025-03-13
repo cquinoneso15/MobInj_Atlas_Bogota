@@ -59,7 +59,7 @@ info.update = function (props) {
         var Z = selected_values["mot"];
         if((Y == "h"|| Y == "e" || Y == "g" || Y == "c" || Y == "ugs" || Y == "cicleway_density" || Y == "street_density" || Y == "walk_inf" || Y == "PT_stops" || Y == "bike_sharing" || Y == "m_slope") && (Z == "fatalities" || Z == "injuries" || Z == "acc_ped" || Z == "acc_car" || Z == "acc_bike" || Z == "acc_moto" || Z == "car_use" || Z == "pt_use" || Z == "bicycle_use" || Z == "moto_use" || Z == "walk_use" || Z == "time" || Z == "pollution")) {
             this._div.innerHTML += (props
-                ? '<b>' + props.Delegation + '</b><br /><span i18n="' + selected_values["v1"] + '"></span> ' + props['Mob'].toFixed(2)  +' ('+ props['Unit_mobil'] +')'+'&nbsp;<br /><span i18n="' + selected_values["mot"] + '"></span> ' + props.Social.toFixed(2) +' ('+ props['Unit_social'] +')</span> '
+                ? '<b>' + props.Delegation + '</b><br /><span i18n="' + selected_values["v1"] + '"></span> ' + props.Social.toFixed(2) + ' (' + props['Unit_social'] + ')' +'&nbsp;<br /><span i18n="' + selected_values["mot"] + '"></span> ' + props['Mob'].toFixed(2)  +' ('+ props['Unit_mobil'] +')</span> '
                 : '');
         } else {
             this._div.innerHTML += (props
@@ -75,7 +75,6 @@ info.update = function (props) {
 };
 
 info.addTo(map);
-
 
 // Add scale
 var scale = L.control.scale({ metric: true, imperial: false }).addTo(map);
