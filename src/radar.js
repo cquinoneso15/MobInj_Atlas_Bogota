@@ -9,7 +9,6 @@
 var currentLayer;
 
 let labels_name = [
-  "",
   "w",
   "u10",
   "u20",
@@ -104,7 +103,7 @@ function radarPlot(e) {
           suggestedMax: 1,
           pointLabels:{
             color: [
-              ...Array(7).fill('#e41a1c'),
+              ...Array(6).fill('#e41a1c'),
               ...Array(4).fill('#377eb8'),
               ...Array(3).fill('#4daf4a'),
               ...Array(6).fill('#984ea3'),
