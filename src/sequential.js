@@ -29,9 +29,9 @@ function handleJsonSeq(data,name) {
                     '#d7301f'  ;
     }
     }else if(selected_values['justice']=="clusters"){function getColor(d){
-    return  d == 1 ? '#309FD1':
+    return  d == 3 ? '#309FD1':
             d == 2 ? '#EC0016':
-            d == 3 ? '#FFD800':
+            d == 1 ? '#FFD800':
                 '#63A615';
 }
 
