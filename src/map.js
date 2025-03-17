@@ -405,7 +405,7 @@ function changeMap() {
             if (propertyName_env && propertyName) {
 
                 if (spat_geojson == null || spat_geojson === 'undefined') {
-                    mergeGeoJSONandCSV2(jsonFilePath_map, csvFilePathji,csvFilePathsg)
+                    mergeGeoJSONandCSV2(jsonFilePath_map, csvFilePathenv,csvFilePathsg)
                         .then(mergedGeoJSON => {
                             // Do something with the merged GeoJSON
                             spat_geojson = mergedGeoJSON;
