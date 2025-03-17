@@ -22,21 +22,13 @@ function handleJsonSeq(data,name) {
     var quants = getQuants(data,"Value");
     
     // Generate style from quantiles
-    if (selected_values['justice']=="amenities"|selected_values['justice']=="ava"|selected_values['justice']=="stations"|selected_values['justice']=="mob_inj_score"){ function getColor(d) {
+    if (selected_values['justice']=="amenities"|selected_values['justice']=="ava"|selected_values['justice']=="stations"){ function getColor(d) {
         return  d > quants["Q3"] ? '#fef0d9' :
                 d > quants["Q2"] ? '#fdcc8a' :
                 d > quants["Q1"] ? '#fc8d59' :
                     '#d7301f'  ;
     }
-    }else if(selected_values['justice']=="clusters"){function getColor(d){
-        return  d > quants["Q3"] ? '#fef0d9' :
-                d > quants["Q2"] ? '#fc8d59' :
-                d > quants["Q1"] ? '#d7301f' :
-                    '#fdcc8a'  ;
-    }
-
-    }
-    else{
+    }else{
     function getColor(d) {
         return  d > quants["Q3"] ? '#d7301f' :
                 d > quants["Q2"] ? '#fc8d59' :

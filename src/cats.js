@@ -79,10 +79,10 @@ var selector_values_before_sp_0 = [
         "value": "access",
         "desc": "access_desc"
     },
-    {
+    /*{
         "value": "mobinj",
         "desc": "mobinj_desc"
-    },
+    },*/
     {
         "value": "summ",
         "desc": "desc_summ"
@@ -239,19 +239,27 @@ var selector_values_after_sp_0 = {
             }
         ]
     },
-    "mobinj":{
+    /*"mobinj":{
         "title": "select_justice",
         "values": [
             {
-                "value": "clusters",
+                "value": "accidents",
                 "desc": "desc"
             },
             {
-                "value": "mob_inj_score",
+                "value": "select_beh",
+                "desc": "desc"
+            },
+            {
+                "value": "time",
+                "desc": "desc"
+            },
+            {
+                "value": "pollution",
                 "desc": "desc"
             }
         ]
-    },
+    },*/
     "summ": {}
 
 }
@@ -1245,21 +1253,6 @@ var selector_values_after_sp_1 = {
                         "desc": "desc"
                     }
                 ]
-            },
-            "mobinj":{
-                "v1":{
-                    "title": "select_temp",
-                    "values": [
-                        {
-                            "value": "clusters",
-                            "desc": "desc"
-                        },
-                        {
-                            "value": "mob_inj_score",
-                            "desc": "desc"
-                        }
-                    ]
-                }
             },
             "summ":{},
         }
