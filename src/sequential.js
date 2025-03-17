@@ -30,7 +30,7 @@ function handleJsonSeq(data,name) {
     }
     }else if(selected_values['justice']=="clusters"){function getColor(d){
     return  d > quants["Q3"] ? '#fef0d9' :
-        d > quants["Q2"] ? '#fc8d59' :
+            d > quants["Q2"] ? '#fc8d59' :
             d > quants["Q1"] ? '#d7301f' :
                 '#fdcc8a'  ;
 }
