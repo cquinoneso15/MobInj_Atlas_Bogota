@@ -515,6 +515,29 @@ function changeMap() {
             }
             break;
 
+        case "mobinj":{
+            var propertyName
+            if (selected_values["v1"] == "clusters" ) {
+                propertyName="cluster";
+            }
+            else if (selected_values["v1"] == "mob_inj_score" ) {
+                propertyName="Mobility Injustice Score";
+            }
+            if (propertyName) {
+                if(mobinj_geojson == null || mobinj_geojson === 'undefined'){
+                    mergeGeoJSONandCSV(jsonFilePath_map, csvFilePathji)
+                        .then(mergedGeoJSON => {
+                            // Do something with the merged GeoJSON
+                            mobinj_geojson= mergedGeoJSON;
+                            handleJsonSeq(selectFeatureByProperty(mobinj_geojson, propertyName),propertyName)
+                        });
+                }
+                else{
+                    handleJsonSeq(selectFeatureByProperty(ji_geojson, propertyName_ji),propertyName_ji)}
+            }
+            break;
+        }
+
         //UTAM Summary
         case "summ":{
             if(radar_geojson == null || radar_geojson === 'undefined'){

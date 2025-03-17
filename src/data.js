@@ -4,6 +4,7 @@ const csvFilePathsg = './data/Social_disadvantage.csv';
 const csvFilePathji = './data/Transport_disadvantage.csv';
 const csvFilePathenv = './data/Environmental_disadvantage.csv';
 const csvradar = './data/Radar.csv';
+const csvmobinj = './data/MobInj.csv';
 
 async function mergeGeoJSONandCSV(geojsonPath, csvPath) {
     // Load and parse the GeoJSON file
@@ -126,6 +127,12 @@ mergeGeoJSONandCSV(jsonFilePath_map, csvFilePathsg)
     .then(mergedGeoJSON => {
         // Do something with the merged GeoJSON
         sg_geojson= mergedGeoJSON;
+    });
+let mobinj_geojson;
+mergeGeoJSONandCSV(jsonFilePath_map, csvmobinj)
+    .then(mergedGeoJSON => {
+        // Do something with the merged GeoJSON
+        mobinj_geojson= mergedGeoJSON;
     });
 
 

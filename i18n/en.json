@@ -139,6 +139,9 @@
     "walk_use": "Walking",
     "radar_walk_use": "Pedestrian Share",
     "time": "Mean Commuting Time",
+
+    "clusters": "Clusters",
+    "mob_inj_score": "Mobility Injustice Score",
 	
 
     "desc": "",
