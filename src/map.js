@@ -517,10 +517,10 @@ function changeMap() {
 
         case "mobinj":{
             var propertyName
-            if (selected_values["v1"] == "clusters" ) {
+            if (selected_values["justice"] == "clusters" ) {
                 propertyName="cluster";
             }
-            else if (selected_values["v1"] == "mob_inj_score" ) {
+            else if (selected_values["justice"] == "mob_inj_score" ) {
                 propertyName="Mobility Injustice Score";
             }
             if (propertyName) {
