@@ -525,7 +525,7 @@ function changeMap() {
             }
             if (propertyName) {
                 if(mobinj_geojson == null || mobinj_geojson === 'undefined'){
-                    mergeGeoJSONandCSV(jsonFilePath_map, csvFilePathji)
+                    mergeGeoJSONandCSV(jsonFilePath_map, csvmobinj)
                         .then(mergedGeoJSON => {
                             // Do something with the merged GeoJSON
                             mobinj_geojson= mergedGeoJSON;

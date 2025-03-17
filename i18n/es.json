@@ -1,7 +1,7 @@
 {
-    "title": "Atlas de (In)justicia de Movilidad de Bogotá, Colombia - TUM",
-    "chair": "Cátedra de Estructura Urbana y Planificación del Transporte - TUM",
-    "header": "Cátedra de Estructura Urbana y Planificación del Transporte\nEscuela de Ingeniería y Diseño - TUM\nUniversidad Técnica de Múnich",
+    "title": "Atlas de (In)justicia de Movilidad de Bogotá, Colombia",
+    "chair": "Cátedra de Estructura Urbana y Planificación del Transporte",
+    "header": "Cátedra de Estructura Urbana y Planificación del Transporte\nEscuela de Ingeniería y Diseño\nUniversidad Técnica de Múnich",
     "hover": "Pase el cursor sobre una UTAM",
     "click": "Haga clic en una UTAM",
     "update": "Actualizar mapa",
@@ -132,6 +132,9 @@
     "pt_use": "Viajes en Transporte Público",
     "walk_use": "Viajes peatonales",
     "time": "Tiempo Medio de Viaje",
+
+    "clusters": "Clústeres",
+    "mob_inj_score": "Índice de injusticia en la movilidad",
 
     "desc": "",
     "legend": "Leyenda",

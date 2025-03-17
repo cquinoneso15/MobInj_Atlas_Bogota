@@ -1,7 +1,7 @@
 {
-    "title": "Atlas der (Un)Gerechtigkeit der Mobilität in Bogotá, Kolumbien - TUM",
-    "chair": "Lehrstuhl für Siedlungsstruktur und Verkehrsplanung - TUM",
-    "header": "Lehrstuhl für Siedlungsstruktur und Verkehrsplanung\nSchool of Engineering and Design - TUM\nTechnische Universität München",
+    "title": "TUM Atlas der (Un)Gerechtigkeit der Mobilität in Bogotá, Kolumbien",
+    "chair": "Lehrstuhl für Siedlungsstruktur und Verkehrsplanung",
+    "header": "Lehrstuhl für Siedlungsstruktur und Verkehrsplanung\nTUM School of Engineering and Design\nTechnische Universität München",
     "hover": "Bewegen Sie den Mauszeiger über eine UTAM",
     "click": "Klicken Sie auf eine UTAM",
     "update": "Karte aktualisieren",
@@ -122,6 +122,9 @@
     "pt_use": "Fahrten mit ÖPNV",
     "walk_use": "Reisen zu Fuß",
     "time": "Durchschnittliche Reisezeit",
+
+    "clusters": "Cluster",
+    "mob_inj_score": "Mobilitätsungerechtigkeitswert",
 
     "desc": "",
     "legend": "Legende",
