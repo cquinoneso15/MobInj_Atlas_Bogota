@@ -77,6 +77,21 @@ function handleJsonSeq(data,name) {
             }
         }
 
+    } else if (selected_values["justice"] == "mob_inj_score") {
+        // Default behavior when justice is NOT "clusters"
+        let grades = [quants["Q0"], quants["Q1"], quants["Q2"], quants["Q3"], quants["Q4"]];
+        legend_text = '<h4> <span i18n="mob_inj_score"></span> [-]</h4>';
+
+        for (var i = 0; i < grades.length - 1; i++) {
+            legend_text +=
+                '<i class="square" style="background:' + getColor((grades[i] + grades[i + 1]) / 2.0) + '" ></i> ' +
+                (grades[i].toFixed(2)) + '&ndash;' + (grades[i + 1].toFixed(2));
+
+            if (i < grades.length - 2) {
+                legend_text += '<br>';
+            }
+        }
+
     } else {
         // Default behavior when justice is NOT "clusters"
         let grades = [quants["Q0"], quants["Q1"], quants["Q2"], quants["Q3"], quants["Q4"]];
