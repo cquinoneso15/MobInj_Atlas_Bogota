@@ -23,6 +23,9 @@ function generateLegend(info, replace) {
                 div.querySelector('.legend-content').innerHTML = info; // Add the info
                 return div;
 
+            } else if(selected_values["map_type"] == "clusters") {
+                div.innerHTML = '<input type="checkbox">'
+
             } else {
                 div.innerHTML = '<input type="checkbox">'
                     + '<div class="legend-title-text" i18n="legend"></div>'

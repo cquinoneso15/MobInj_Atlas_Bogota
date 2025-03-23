@@ -56,16 +56,46 @@ function handleJsonSeq(data,name) {
         };
     }
     // legend
-    let grades = [quants["Q0"], quants["Q1"], quants["Q2"], quants["Q3"], quants["Q4"]];
-    var legend_text = '<h4> <span i18n="' + (selected_values["map_type"] == "sg" ? selected_values["justice"] : selected_values["v1"]) + '"></span> [<span i18n="' + unit + '"></span>]'+  '</h4>';
+    // Define legend text based on justice value
+    var legend_text;
 
-   // loop through our density intervals and generate a label with a colored square for each interval
-    for (var i = 0; i < grades.length - 1; i++) {
-        legend_text +=
-            '<i class="square" style="background:' + getColor((grades[i] + grades[i + 1]) / 2.0) + '" ></i> ' +
-            (grades[i].toFixed(2)) + '&ndash;' + (grades[i + 1].toFixed(2));
-        if (i < grades.length - 2) { legend_text += '<br>'; }
+    if (selected_values["justice"] == "clusters") {
+        // If justice is "clusters", set a fixed header and unit
+        legend_text = '<h4>Clusters [-]</h4>';
+
+        // Define fixed grades for clusters
+        let grades = [1, 2, 3, 4];
+
+        // Loop through the exact values
+        for (var i = 0; i < grades.length; i++) {
+            legend_text +=
+                '<i class="square" style="background:' + getColor(grades[i]) + '"></i> ' +
+                grades[i];
+
+            if (i < grades.length - 1) {
+                legend_text += '<br>';
+            }
+        }
+
+    } else {
+        // Default behavior when justice is NOT "clusters"
+        let grades = [quants["Q0"], quants["Q1"], quants["Q2"], quants["Q3"], quants["Q4"]];
+
+        legend_text = '<h4> <span i18n="' +
+            (selected_values["map_type"] == "sg" ? selected_values["justice"] : selected_values["v1"]) +
+            '"></span> [<span i18n="' + unit + '"></span>]'+  '</h4>';
+
+        for (var i = 0; i < grades.length - 1; i++) {
+            legend_text +=
+                '<i class="square" style="background:' + getColor((grades[i] + grades[i + 1]) / 2.0) + '" ></i> ' +
+                (grades[i].toFixed(2)) + '&ndash;' + (grades[i + 1].toFixed(2));
+
+            if (i < grades.length - 2) {
+                legend_text += '<br>';
+            }
+        }
     }
+
 
     // add legend to map
     generateLegend(legend_text, false);
