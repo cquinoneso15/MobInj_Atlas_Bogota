@@ -520,9 +520,6 @@ function changeMap() {
             if (selected_values["justice"] == "clusters" ) {
                 propertyName="cluster";
             }
-            else if (selected_values["justice"] == "mob_inj_score" ) {
-                propertyName="Mobility Injustice Score";
-            }
             if (propertyName) {
                 if(mobinj_geojson == null || mobinj_geojson === 'undefined'){
                     mergeGeoJSONandCSV(jsonFilePath_map, csvmobinj)
