@@ -245,11 +245,11 @@ var selector_values_after_sp_0 = {
             {
                 "value": "clusters",
                 "desc": "desc"
-            },
+            }/*,
             {
                 "value": "mob_inj_score",
                 "desc": "desc"
-            }
+            }*/
         ]
     },
     "summ": {}

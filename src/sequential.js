@@ -77,7 +77,7 @@ function handleJsonSeq(data,name) {
             }
         }
 
-    } else if (selected_values["justice"] == "mob_inj_score") {
+    /*} else if (selected_values["justice"] == "mob_inj_score") {
         // Default behavior when justice is NOT "clusters"
         let grades = [quants["Q0"], quants["Q1"], quants["Q2"], quants["Q3"], quants["Q4"]];
         legend_text = '<h4> <span i18n="mob_inj_score"></span> [-]</h4>';
@@ -90,7 +90,7 @@ function handleJsonSeq(data,name) {
             if (i < grades.length - 2) {
                 legend_text += '<br>';
             }
-        }
+        }*/
 
     } else {
         // Default behavior when justice is NOT "clusters"
