@@ -210,10 +210,10 @@ function changeMap() {
                 propertyName_env="Schools [1/ha]";
             }
             else if (selected_values["v1"] == "g" ) {//Carlos
-                propertyName_env="Government Services [1/ha]";
+                propertyName_env="Government Services [1/100 ha]";
             }
             else if (selected_values["v1"] == "c" ) {//Carlos
-                propertyName_env="Cultural Activites [1/ha]";
+                propertyName_env="Cultural Activites [1/100 ha]";
             }
             else if (selected_values["v1"] == "ugs" ) {//Carlos
                 propertyName_env="UGS [% area]";
@@ -231,7 +231,7 @@ function changeMap() {
                 propertyName_env="PT Stations [1/ha]";
             }
             else if (selected_values["v1"] == "bike_sharing" ) {//Carlos
-                propertyName_env="Bike sharing [1/ha]";
+                propertyName_env="Bike sharing [1/100 ha]";
             }
             else if (selected_values["v1"] == "m_slope" ) {//Carlos
                 propertyName_env="Mean slope [%]";
@@ -375,10 +375,10 @@ function changeMap() {
                 propertyName_env="Schools [1/ha]";
             }
             else if (selected_values["mot"] == "g" ) {//Carlos
-                propertyName_env="Government Services [1/ha]";
+                propertyName_env="Government Services [1/100 ha]";
             }
             else if (selected_values["mot"] == "c" ) {//Carlos
-                propertyName_env="Cultural Activites [1/ha]";
+                propertyName_env="Cultural Activites [1/100 ha]";
             }
             else if (selected_values["mot"] == "ugs" ) {//Carlos
                 propertyName_env="UGS [% area]";
@@ -396,7 +396,7 @@ function changeMap() {
                 propertyName_env="PT Stations [1/ha]";
             }
             else if (selected_values["mot"] == "bike_sharing" ) {//Carlos
-                propertyName_env="Bike sharing [1/ha]";
+                propertyName_env="Bike sharing [1/100 ha]";
             }
             else if (selected_values["mot"] == "m_slope" ) {//Carlos
                 propertyName_env="Mean slope [%]";
@@ -427,10 +427,10 @@ function changeMap() {
                 propertyName_env="Schools [1/ha]";
             }
             else if (selected_values["v1"] == "g" ) {//Carlos
-                propertyName_env="Government Services [1/ha]";
+                propertyName_env="Government Services [1/100 ha]";
             }
             else if (selected_values["v1"] == "c" ) {//Carlos
-                propertyName_env="Cultural Activites [1/ha]";
+                propertyName_env="Cultural Activites [1/100 ha]";
             }
             else if (selected_values["v1"] == "ugs" ) {//Carlos
                 propertyName_env="UGS [% area]";
@@ -448,7 +448,7 @@ function changeMap() {
                 propertyName_env="PT Stations [1/ha]";
             }
             else if (selected_values["v1"] == "bike_sharing" ) {//Carlos
-                propertyName_env="Bike sharing [1/ha]";
+                propertyName_env="Bike sharing [1/100 ha]";
             }
             else if (selected_values["v1"] == "m_slope" ) {//Carlos
                 propertyName_env = "Mean slope [%]";
